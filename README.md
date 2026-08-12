@@ -143,6 +143,8 @@ This is the closest existing work to combining spatial-artifact detection with p
 This section translates the identified research gaps (Sections 2, 7, 7a) into a concrete set of contributions for the proposal/thesis. Nothing here is a single existing paper — each item closes a specific, citable gap identified across the FAS survey, the joint-benchmark paper, and the ViT literature.
 
 ### 8.1 Architecture-level contribution
+<img width="2720" height="2560" alt="unified_liveness_deepfake_architecture" src="https://github.com/user-attachments/assets/1944b0ee-938f-468c-b980-09ca8fcfc694" />
+
 
 **Core proposal: a three-branch fusion transformer, trained and evaluated jointly on physical presentation attacks and digital deepfakes.**
 
@@ -167,7 +169,47 @@ This section translates the identified research gaps (Sections 2, 7, 7a) into a 
 | Unified benchmark dataset | Existing joint benchmarks (Yu et al., 2022) exclude real-time virtual-camera injection attacks | Merge OULU-NPU / CelebA-Spoof / SiW-M (physical) with FaceForensics++ / Celeb-DF (digital), plus a newly captured set of virtual-camera-injection samples |
 | Attendance-specific evaluation protocol | No FAS benchmark simulates a queue-based, low-latency, variable-hardware attendance scenario | New protocol: cross-device, cross-lighting, sub-2-second inference budget, plus an "unknown attack" holdout split |
 | Lightweight/mobile variant | ViT-based methods are too heavy for real-time queues (ViTranZFAS: 85.8M params) | Knowledge-distill the three-branch model into a compact student network (TransRPPG-scale: <1M params) for deployment |
-| Interpretability output | Nearly every FAS survey reviewed flags explainability as missing | Spoof-region localization map (Grad-CAM or pixel-wise auxiliary supervision) so a human reviewer can see *why* a face was flagged — important for attendance systems where false rejections need manual review |
+| Interpretability output | Nearly every FAS survey reviewed flags explainability as missing | Spoof-region localization map via a multi-task auxiliary head on the same model (see Section 8.3.1) — not a separate network — so a human reviewer can see *why* a face was flagged, important for attendance systems where false rejections need manual review |
+
+#### 8.3.1 Spoof localization as a multi-task auxiliary head (not a second model)
+
+Spoof localization should be implemented as an **auxiliary output head on the same shared backbone**, not as a separately trained model. This is both cheaper and, per the pixel-wise supervision literature, actively improves the primary classifier rather than merely adding an explainability side-output.
+
+**Why one model, not two:**
+- Pixel-wise/mask supervision is a training signal, not a downstream task — the same backbone features used for classification can simultaneously drive a small localization decoder in a single forward pass. This is how George & Marcel's cascaded confidence-map approach, CDCN/pyramid-supervision depth-map decoders, and Swin-Y-Net's segmentation-then-classification design all work.
+- The localization signal acts as a **regularizer**: forcing the model to explain *where* the spoof is prevents it from latching onto unfaithful shortcut patterns (e.g., screen bezel) that plain binary-loss training is prone to.
+- A shared representation means classification and localization share the same generalization behavior — training two separate models would require validating two independent generalization gaps that might disagree on ambiguous cases.
+- The added inference cost is small (a lightweight conv/deconv decoder on top of the existing backbone), which matters given the edge-deployment latency constraints already identified for this project.
+
+**Proposed architecture:**
+
+```
+Input face crop
+      │
+Shared backbone (three-branch fusion, per Section 8.1)
+      │
+      ├──> Localization head (small conv/deconv decoder) → binary spoof mask / depth map
+      │
+      └──> Classification head (pooling + FC) → live / physical-attack / digital-attack
+```
+
+**Combined training objective:**
+
+```
+L_total = λ1 · L_classification + λ2 · L_localization
+```
+
+where `L_localization` is a pixel-wise binary cross-entropy (for mask supervision) or L1/L2 loss (for depth supervision) against ground-truth, and `λ1`/`λ2` balance the two objectives.
+
+**Binary mask vs. depth map — recommendation:** favor binary mask supervision over depth-map supervision as the default for this project. Depth maps are more physically intuitive but fail on inherently 3D attacks (3D masks, mannequins, since these have genuine facial depth indistinguishable from a live face) and are costly to generate accurate ground truth for. Binary masks are cheaper to generate, generalize across more attack types, and can be extended to ternary labels (real / spoofed / uncertain background) to better handle partial attacks such as a phone screen only covering part of the frame — the most likely real-world case for this project's attendance-fraud scenario. If 3D mask attacks are in-scope, pair localization with the rPPG branch rather than relying on depth-based localization alone, since masks lack a pulse signal that depth maps cannot capture.
+
+**Known limitations to scope explicitly (not oversell in the proposal):**
+- Localization quality tracks the same generalization problem as detection accuracy — on unseen attack types (e.g., partial print, half-mask), predictions become chaotic and regions beyond the actual spoof medium get incorrectly flagged.
+- Naive pixel-wise supervision treats all patches with equal weight, which biases the model since subtle clues like moiré patterns vary in intensity across regions — mitigate with a learnable attention module before computing the localization loss, rather than plain unweighted pixel-wise loss.
+
+**Label-generation work required (this is the real added effort, not a second model):**
+- Physical attacks: binary masks can often be derived heuristically (e.g., whole-face-region "spoof" label for print/replay) or via a pseudo-depth generator applied only to genuine faces, with spoof samples assigned a flat/zero depth map.
+- Digital attacks (deepfakes): if generating your own manipulated samples, masks come for free from knowing which pixels were blended/swapped; if using existing deepfake datasets, approximate via face-parsing plus the known manipulation region.
 
 ### 8.4 Concrete improvements over specific prior work
 
@@ -215,7 +257,6 @@ This section translates the identified research gaps (Sections 2, 7, 7a) into a 
 20. "Face Spoofing Detection using Swin Transformer and rPPG Signal" ("Deep Guard"), IJRASET, 2025.
 21. Yadav et al., "MFLD-RSTF: Multimodal Face Anti-spoofing with rPPG and Deep Spatio-temporal Features," SIGMAA 2024 (Springer).
 
-*(Add DOIs/full citations in your reference manager as you access each paper; several are on arXiv and freely accessible.)*
 
 ---
 
