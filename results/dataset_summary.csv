@@ -1,0 +1,9 @@
+,clips,clips,clips,videos,videos,videos
+split,test,train,val,test,train,val
+method,,,,,,
+Deepfakes,120,240,60,60,120,30
+Face2Face,120,240,60,60,120,30
+FaceShifter,120,0,0,60,0,0
+FaceSwap,120,240,60,60,120,30
+NeuralTextures,120,240,60,60,120,30
+Real,120,240,60,60,120,30

@@ -1,6 +1,10 @@
 # Robust Face Liveness & Deepfake Detection for Attendance Systems
 ## Literature Review Outline & System Scoping Document
 
+## Progress — Lalit (Image Processing Track)
+- **Week 1:** Literature review & scoping — see `docs/week1/`
+- **Week 2:** Pipeline implementation, experiments, results — see `docs/week2/`, `notebooks/`, `results/`
+
 ---
 
 ## 1. Problem Statement

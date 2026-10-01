@@ -1,0 +1,4 @@
+test_set,rate_flagged_as_screen,AUC_clean_vs_screen
+clean (should be 'no screen'),0.0,
+rc_seen,1.0,1.0
+rc_unseen,1.0,1.0
