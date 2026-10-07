@@ -1,0 +1,5 @@
+,clips,clips,clips,videos,videos,videos
+split,test,train,val,test,train,val
+method,,,,,,
+Live,1615,3621,829,1615,3621,829
+Spoof,625,749,128,625,749,128
