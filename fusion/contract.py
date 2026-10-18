@@ -134,13 +134,15 @@ def build_aligned_fusion_table(
         aligned_rows.append(row)
 
     df = pd.DataFrame(aligned_rows)
+    complete_count = len(df.dropna(subset=["spatial_score", "frequency_score", "rppg_score"]))
     print("\n" + "=" * 50)
     print(" Aligned Fusion Table Summary")
     print("=" * 50)
-    print(f"Total Videos: {len(df)}")
-    print(f"Missing Spatial Predictions:   {missing_counts['spatial']}")
-    print(f"Missing Frequency Predictions: {missing_counts['frequency']}")
-    print(f"Missing rPPG Predictions:      {missing_counts['rppg']}")
+    print(f"Total Videos in Manifest:               {len(df)}")
+    print(f"Samples with Complete (3-Branch) Scores: {complete_count}")
+    print(f"Missing Spatial Predictions:             {missing_counts['spatial']}")
+    print(f"Missing Frequency Predictions:           {missing_counts['frequency']}")
+    print(f"Missing rPPG Predictions:                {missing_counts['rppg']}")
     print("=" * 50 + "\n")
 
     if output_csv:

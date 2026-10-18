@@ -244,7 +244,8 @@ def generate_mock(splits: dict, out_dir: str) -> None:
     rng = np.random.RandomState(SEED)
     sp_preds, fq_preds, rp_preds = [], [], []
 
-    for s in splits["test_samples"]:
+    eval_samples = splits.get("val_samples", []) + splits.get("test_samples", [])
+    for s in eval_samples:
         vid   = s["video_id"]
         label = s["label"]
         meta  = s.get("metadata", {})

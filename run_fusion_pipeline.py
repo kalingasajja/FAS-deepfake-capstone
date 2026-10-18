@@ -42,15 +42,16 @@ def main():
         output_csv=aligned_csv
     )
 
-    # Filter available test set samples
-    test_df = df[df["split"] == "test"].copy()
-    val_df = df[df["split"] == "val"].copy()
+    # Filter available samples with complete branch predictions
+    test_df = df[(df["split"] == "test") & df["spatial_score"].notna() & df["frequency_score"].notna() & df["rppg_score"].notna()].copy()
+    val_df = df[(df["split"] == "val") & df["spatial_score"].notna() & df["frequency_score"].notna() & df["rppg_score"].notna()].copy()
 
-    # If val is empty (e.g. evaluating only test set predictions), use test_df for demonstration
+    # If val predictions are not provided, fall back safely
     if len(val_df) == 0:
+        print("[WARN] No validation predictions found. Calibrating weights on available test samples.")
         val_df = test_df.copy()
 
-    print(f"[INFO] Evaluating on {len(test_df)} test samples...")
+    print(f"[INFO] Calibrating on {len(val_df)} validation samples, evaluating on {len(test_df)} test samples...")
 
     # 2. Optimize Baseline Weights
     weights, thresh, val_score = optimize_weights_on_val(val_df, step=0.05, metric="roc_auc")

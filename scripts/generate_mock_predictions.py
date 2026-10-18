@@ -29,13 +29,12 @@ def generate_mock_predictions(
     rng = random.Random(seed)
     np_rng = np.random.RandomState(seed)
 
-    # Load samples
+    # Load validation and test samples
     if os.path.exists(splits_path):
         with open(splits_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-        samples = data.get("test_samples", [])
+        samples = data.get("val_samples", []) + data.get("test_samples", [])
     else:
-        # Fallback to master manifest test if splits not yet generated
         samples = []
 
     if not samples:

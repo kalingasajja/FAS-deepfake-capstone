@@ -14,7 +14,7 @@ Strict Methodology:
 
 import numpy as np
 import pandas as pd
-from typing import Dict, Tuple, List, Any
+from typing import Dict, Tuple, List, Any, Optional
 from sklearn.metrics import (
     accuracy_score, balanced_accuracy_score,
     f1_score, precision_score, recall_score, roc_auc_score
@@ -37,43 +37,74 @@ def compute_metrics(y_true: np.ndarray, y_prob: np.ndarray, threshold: float = 0
 
 def optimize_weights_on_val(
     val_df: pd.DataFrame,
+    allowed_branches: Optional[List[str]] = None,
     step: float = 0.05,
     metric: str = "roc_auc"
 ) -> Tuple[Tuple[float, float, float], float, float]:
     """
     Grid-searches the simplex w_s + w_f + w_r = 1 on the validation set.
+    Restricts search to allowed_branches if provided (e.g. ['spatial', 'frequency']).
     Returns: ((w_s, w_f, w_r), best_threshold, best_val_score)
     """
-    y_val = val_df["label"].values.astype(int)
-    p_s = val_df["spatial_score"].values.astype(float)
-    p_f = val_df["frequency_score"].values.astype(float)
-    p_r = val_df["rppg_score"].values.astype(float)
+    clean_val = val_df.dropna(subset=["label", "spatial_score", "frequency_score", "rppg_score"]).copy()
+    if len(clean_val) == 0:
+        raise ValueError("val_df contains no complete prediction rows (scores are all NaN).")
+
+    y_val = clean_val["label"].values.astype(int)
+    p_s = clean_val["spatial_score"].values.astype(float)
+    p_f = clean_val["frequency_score"].values.astype(float)
+    p_r = clean_val["rppg_score"].values.astype(float)
+
+    if allowed_branches is None:
+        allow_s, allow_f, allow_r = True, True, True
+    else:
+        allow_s = "spatial" in allowed_branches or "spatial_score" in allowed_branches
+        allow_f = "frequency" in allowed_branches or "frequency_score" in allowed_branches
+        allow_r = "rppg" in allowed_branches or "rppg_score" in allowed_branches
 
     best_score = -1.0
-    best_weights = (1/3, 1/3, 1/3)
+    best_weights = (
+        1.0 if allow_s and not allow_f and not allow_r else (0.5 if allow_s and allow_f and not allow_r else 1/3),
+        1.0 if allow_f and not allow_s and not allow_r else (0.5 if allow_s and allow_f and not allow_r else 1/3),
+        1.0 if allow_r and not allow_s and not allow_f else 1/3,
+    )
     best_threshold = 0.5
 
-    # Grid search over weights
     steps = int(round(1.0 / step))
     for i in range(steps + 1):
-        w_s = i * step
+        w_s = round(i * step, 4)
+        if not allow_s and w_s > 0:
+            continue
         for j in range(steps + 1 - i):
-            w_f = j * step
+            w_f = round(j * step, 4)
+            if not allow_f and w_f > 0:
+                continue
             w_r = round(1.0 - w_s - w_f, 4)
+            if not allow_r and w_r > 0:
+                continue
             if w_r < -1e-5:
                 continue
             w_r = max(0.0, w_r)
 
             fused_val = w_s * p_s + w_f * p_f + w_r * p_r
 
+            # Determine threshold & validation score
             if metric == "roc_auc":
                 try:
                     score = roc_auc_score(y_val, fused_val)
                 except Exception:
                     score = 0.0
                 curr_thresh = 0.5
+                # Also find best F1 threshold for operational classification
+                best_t = 0.5
+                best_f1 = -1.0
+                for t in np.linspace(0.1, 0.9, 17):
+                    f1 = f1_score(y_val, (fused_val >= t).astype(int), zero_division=0)
+                    if f1 > best_f1:
+                        best_f1 = f1
+                        best_t = float(t)
+                curr_thresh = best_t
             else:
-                # Find best threshold for F1 or accuracy
                 best_t = 0.5
                 best_m = -1.0
                 for t in np.linspace(0.1, 0.9, 17):
@@ -81,13 +112,13 @@ def optimize_weights_on_val(
                     m = f1_score(y_val, preds, zero_division=0) if metric == "f1" else accuracy_score(y_val, preds)
                     if m > best_m:
                         best_m = m
-                        best_t = t
+                        best_t = float(t)
                 score = best_m
                 curr_thresh = best_t
 
             if score > best_score:
                 best_score = score
-                best_weights = (round(w_s, 4), round(w_f, 4), round(w_r, 4))
+                best_weights = (w_s, w_f, w_r)
                 best_threshold = curr_thresh
 
     return best_weights, best_threshold, best_score
@@ -110,13 +141,13 @@ def run_full_ablation(
     """
     y_test = test_df["label"].values.astype(int)
     configurations = [
-        {"name": "Spatial (SigLIP/ViT)", "cols": ["spatial_score"], "fixed_weights": (1.0, 0.0, 0.0)},
-        {"name": "Frequency (FFT/DCT)",  "cols": ["frequency_score"], "fixed_weights": (0.0, 1.0, 0.0)},
-        {"name": "rPPG (Physiological)", "cols": ["rppg_score"], "fixed_weights": (0.0, 0.0, 1.0)},
-        {"name": "Spatial + Frequency",  "cols": ["spatial_score", "frequency_score"], "fixed_weights": None},
-        {"name": "Spatial + rPPG",       "cols": ["spatial_score", "rppg_score"], "fixed_weights": None},
-        {"name": "Frequency + rPPG",     "cols": ["frequency_score", "rppg_score"], "fixed_weights": None},
-        {"name": "Unified (All 3)",      "cols": ["spatial_score", "frequency_score", "rppg_score"], "fixed_weights": None},
+        {"name": "Spatial (SigLIP/ViT)", "branches": ["spatial"], "fixed_weights": (1.0, 0.0, 0.0)},
+        {"name": "Frequency (FFT/DCT)",  "branches": ["frequency"], "fixed_weights": (0.0, 1.0, 0.0)},
+        {"name": "rPPG (Physiological)", "branches": ["rppg"], "fixed_weights": (0.0, 0.0, 1.0)},
+        {"name": "Spatial + Frequency",  "branches": ["spatial", "frequency"], "fixed_weights": None},
+        {"name": "Spatial + rPPG",       "branches": ["spatial", "rppg"], "fixed_weights": None},
+        {"name": "Frequency + rPPG",     "branches": ["frequency", "rppg"], "fixed_weights": None},
+        {"name": "Unified (All 3)",      "branches": ["spatial", "frequency", "rppg"], "fixed_weights": None},
     ]
 
     results = []
@@ -127,10 +158,10 @@ def run_full_ablation(
     for cfg in configurations:
         name = cfg["name"]
         fixed = cfg["fixed_weights"]
+        branches = cfg["branches"]
 
         if fixed is not None:
             weights = fixed
-            # Find best threshold on validation
             val_probs = fixed[0] * val_df["spatial_score"].values + fixed[1] * val_df["frequency_score"].values + fixed[2] * val_df["rppg_score"].values
             best_thresh = 0.5
             best_f1 = -1.0
@@ -138,28 +169,26 @@ def run_full_ablation(
                 f1 = f1_score(val_df["label"].values, (val_probs >= t).astype(int), zero_division=0)
                 if f1 > best_f1:
                     best_f1 = f1
-                    best_thresh = t
+                    best_thresh = float(t)
         else:
-            # Mask inactive columns by setting step appropriately
-            if "spatial_score" not in cfg["cols"]:
-                w_s_max = 0.0
-            if "frequency_score" not in cfg["cols"]:
-                w_f_max = 0.0
-            if "rppg_score" not in cfg["cols"]:
-                w_r_max = 0.0
-            
-            # Simple grid search on val
-            weights, best_thresh, _ = optimize_weights_on_val(val_df, step=0.05, metric="roc_auc")
+            weights, best_thresh, _ = optimize_weights_on_val(
+                val_df,
+                allowed_branches=branches,
+                step=0.05,
+                metric="roc_auc"
+            )
 
-        # Evaluate on test set
+        # Evaluate frozen weights & threshold on test set
         test_probs = weights[0] * p_s_test + weights[1] * p_f_test + weights[2] * p_r_test
         metrics = compute_metrics(y_test, test_probs, threshold=best_thresh)
         metrics["model"] = name
         metrics["w_spatial"] = weights[0]
         metrics["w_frequency"] = weights[1]
         metrics["w_rppg"] = weights[2]
+        metrics["threshold"] = round(best_thresh, 2)
         results.append(metrics)
 
     res_df = pd.DataFrame(results)
     cols = ["model", "accuracy", "balanced_accuracy", "f1", "precision", "recall", "roc_auc", "w_spatial", "w_frequency", "w_rppg", "threshold"]
     return res_df[cols]
+
