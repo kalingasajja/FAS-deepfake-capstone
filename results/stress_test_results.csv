@@ -1,0 +1,6 @@
+condition,samples,spatial_score_f1,spatial_score_auc,frequency_score_f1,frequency_score_auc,rppg_score_f1,rppg_score_auc,fused_score_f1,fused_score_auc
+All Samples,67,1.0,1.0,1.0,1.0,0.84,0.9165,0.84,0.9165
+Bad Lighting,1,1.0,,1.0,,1.0,,1.0,
+Well-Lit,15,1.0,,1.0,,0.6364,,0.6364,
+High Motion (Movement: Yes),13,1.0,,1.0,,0.5556,,0.5556,
+Stationary (Movement: No),3,1.0,,1.0,,1.0,,1.0,

@@ -1,0 +1,12 @@
+generator,category,fake_count,accuracy,balanced_accuracy,f1,roc_auc
+AkoolAI,face_swap,2,1.0,1.0,1.0,1.0
+Deepfaker,face_swap,2,1.0,1.0,1.0,1.0
+Faceswapper,face_swap,2,1.0,1.0,1.0,1.0
+Kaggle,face_swap,2,1.0,1.0,1.0,1.0
+KlingAI,synthetic,3,0.975609756097561,0.8333333333333333,0.8,1.0
+Luma,synthetic,3,1.0,1.0,1.0,1.0
+Pika,synthetic,3,0.926829268292683,0.5,0.0,0.49122807017543857
+PixVerse,synthetic,3,0.975609756097561,0.8333333333333333,0.8,1.0
+RefaceAI,face_swap,2,1.0,1.0,1.0,1.0
+Runway,synthetic,3,0.926829268292683,0.5,0.0,0.7017543859649122
+Sora,synthetic,4,1.0,1.0,1.0,1.0

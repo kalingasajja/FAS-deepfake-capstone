@@ -1,0 +1,6137 @@
+[
+  {
+    "video_id": "face_swap_AkoolAI_001_AkoolAI_fa021",
+    "relative_path": "fake/AkoolAI_FS/001_AkoolAI_fa021.mp4",
+    "filename": "001_AkoolAI_fa021.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_001",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_009_AkoolAI_fa020",
+    "relative_path": "fake/AkoolAI_FS/009_AkoolAI_fa020.mp4",
+    "filename": "009_AkoolAI_fa020.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_009",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_015_AkoolAI_fa011",
+    "relative_path": "fake/AkoolAI_FS/015_AkoolAI_fa011.mp4",
+    "filename": "015_AkoolAI_fa011.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_015",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_017_AkoolAI_fa005",
+    "relative_path": "fake/AkoolAI_FS/017_AkoolAI_fa005.mp4",
+    "filename": "017_AkoolAI_fa005.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_017",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_019_AkoolAI_fa010",
+    "relative_path": "fake/AkoolAI_FS/019_AkoolAI_fa010.mp4",
+    "filename": "019_AkoolAI_fa010.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_019",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_020_AkoolAI_fa015",
+    "relative_path": "fake/AkoolAI_FS/020_AkoolAI_fa015.mp4",
+    "filename": "020_AkoolAI_fa015.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_020",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_023_AkoolAI_fa001",
+    "relative_path": "fake/AkoolAI_FS/023_AkoolAI_fa001.mp4",
+    "filename": "023_AkoolAI_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_023",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_025_AkoolAI_fa001",
+    "relative_path": "fake/AkoolAI_FS/025_AkoolAI_fa001.mp4",
+    "filename": "025_AkoolAI_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_025",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_026_AkoolAI_fa001",
+    "relative_path": "fake/AkoolAI_FS/026_AkoolAI_fa001.mp4",
+    "filename": "026_AkoolAI_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_026",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_028_AkoolAI_fa007",
+    "relative_path": "fake/AkoolAI_FS/028_AkoolAI_fa007.mp4",
+    "filename": "028_AkoolAI_fa007.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_028",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_039_AkoolAI_fa018",
+    "relative_path": "fake/AkoolAI_FS/039_AkoolAI_fa018.mp4",
+    "filename": "039_AkoolAI_fa018.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_039",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_041_AkoolAI_fa008",
+    "relative_path": "fake/AkoolAI_FS/041_AkoolAI_fa008.mp4",
+    "filename": "041_AkoolAI_fa008.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_041",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_043_AkoolAI_fa022",
+    "relative_path": "fake/AkoolAI_FS/043_AkoolAI_fa022.mp4",
+    "filename": "043_AkoolAI_fa022.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_043",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_AkoolAI_045_AkoolAI_fa007",
+    "relative_path": "fake/AkoolAI_FS/045_AkoolAI_fa007.mp4",
+    "filename": "045_AkoolAI_fa007.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "AkoolAI",
+    "split_group": "target_045",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_001_Deepfaker_fa021",
+    "relative_path": "fake/Deepfaker_FS/001_Deepfaker_fa021.mp4",
+    "filename": "001_Deepfaker_fa021.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_001",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_009_Deepfaker_fa020",
+    "relative_path": "fake/Deepfaker_FS/009_Deepfaker_fa020.mp4",
+    "filename": "009_Deepfaker_fa020.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_009",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_015_Deepfaker_fa011",
+    "relative_path": "fake/Deepfaker_FS/015_Deepfaker_fa011.mp4",
+    "filename": "015_Deepfaker_fa011.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_015",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_017_Deepfaker_fa005",
+    "relative_path": "fake/Deepfaker_FS/017_Deepfaker_fa005.mp4",
+    "filename": "017_Deepfaker_fa005.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_017",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_019_Deepfaker_fa010",
+    "relative_path": "fake/Deepfaker_FS/019_Deepfaker_fa010.mp4",
+    "filename": "019_Deepfaker_fa010.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_019",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_020_Deepfaker_fa015",
+    "relative_path": "fake/Deepfaker_FS/020_Deepfaker_fa015.mp4",
+    "filename": "020_Deepfaker_fa015.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_020",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_023_Deepfaker_fa001",
+    "relative_path": "fake/Deepfaker_FS/023_Deepfaker_fa001.mp4",
+    "filename": "023_Deepfaker_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_023",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_025_Deepfaker_fa001",
+    "relative_path": "fake/Deepfaker_FS/025_Deepfaker_fa001.mp4",
+    "filename": "025_Deepfaker_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_025",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_026_Deepfaker_fa020",
+    "relative_path": "fake/Deepfaker_FS/026_Deepfaker_fa020.mp4",
+    "filename": "026_Deepfaker_fa020.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_026",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_028_Deepfaker_fa007",
+    "relative_path": "fake/Deepfaker_FS/028_Deepfaker_fa007.mp4",
+    "filename": "028_Deepfaker_fa007.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_028",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_029_Deepfaker_fa020",
+    "relative_path": "fake/Deepfaker_FS/029_Deepfaker_fa020.mp4",
+    "filename": "029_Deepfaker_fa020.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_029",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_031_Deepfaker_fa018",
+    "relative_path": "fake/Deepfaker_FS/031_Deepfaker_fa018.mp4",
+    "filename": "031_Deepfaker_fa018.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_031",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_033_Deepfaker_fa008",
+    "relative_path": "fake/Deepfaker_FS/033_Deepfaker_fa008.mp4",
+    "filename": "033_Deepfaker_fa008.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_033",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_035_Deepfaker_fa022",
+    "relative_path": "fake/Deepfaker_FS/035_Deepfaker_fa022.mp4",
+    "filename": "035_Deepfaker_fa022.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_035",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_039_Deepfaker_fa018",
+    "relative_path": "fake/Deepfaker_FS/039_Deepfaker_fa018.mp4",
+    "filename": "039_Deepfaker_fa018.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_039",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_041_Deepfaker_fa008",
+    "relative_path": "fake/Deepfaker_FS/041_Deepfaker_fa008.mp4",
+    "filename": "041_Deepfaker_fa008.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_041",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_043_Deepfaker_fa022",
+    "relative_path": "fake/Deepfaker_FS/043_Deepfaker_fa022.mp4",
+    "filename": "043_Deepfaker_fa022.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_043",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Deepfaker_045_Deepfaker_fa007",
+    "relative_path": "fake/Deepfaker_FS/045_Deepfaker_fa007.mp4",
+    "filename": "045_Deepfaker_fa007.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Deepfaker",
+    "split_group": "target_045",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_001_Faceswapper_fa021",
+    "relative_path": "fake/Faceswapper_FS/001_Faceswapper_fa021.mp4",
+    "filename": "001_Faceswapper_fa021.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_001",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_009_Faceswapper_fa020",
+    "relative_path": "fake/Faceswapper_FS/009_Faceswapper_fa020.mp4",
+    "filename": "009_Faceswapper_fa020.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_009",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_015_Faceswapper_fa011",
+    "relative_path": "fake/Faceswapper_FS/015_Faceswapper_fa011.mp4",
+    "filename": "015_Faceswapper_fa011.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_015",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_017_Faceswapper_fa005",
+    "relative_path": "fake/Faceswapper_FS/017_Faceswapper_fa005.mp4",
+    "filename": "017_Faceswapper_fa005.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_017",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_019_Faceswapper_fa010",
+    "relative_path": "fake/Faceswapper_FS/019_Faceswapper_fa010.mp4",
+    "filename": "019_Faceswapper_fa010.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_019",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_020_Faceswapper_fa015",
+    "relative_path": "fake/Faceswapper_FS/020_Faceswapper_fa015.mp4",
+    "filename": "020_Faceswapper_fa015.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_020",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_023_Faceswapper_fa001",
+    "relative_path": "fake/Faceswapper_FS/023_Faceswapper_fa001.mp4",
+    "filename": "023_Faceswapper_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_023",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_025_Faceswapper_fa001",
+    "relative_path": "fake/Faceswapper_FS/025_Faceswapper_fa001.mp4",
+    "filename": "025_Faceswapper_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_025",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_026_Faceswapper_fa001",
+    "relative_path": "fake/Faceswapper_FS/026_Faceswapper_fa001.mp4",
+    "filename": "026_Faceswapper_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_026",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_028_Faceswapper_fa007",
+    "relative_path": "fake/Faceswapper_FS/028_Faceswapper_fa007.mp4",
+    "filename": "028_Faceswapper_fa007.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_028",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_029_Faceswapper_fa020",
+    "relative_path": "fake/Faceswapper_FS/029_Faceswapper_fa020.mp4",
+    "filename": "029_Faceswapper_fa020.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_029",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_031_Faceswapper_fa018",
+    "relative_path": "fake/Faceswapper_FS/031_Faceswapper_fa018.mp4",
+    "filename": "031_Faceswapper_fa018.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_031",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_033_Faceswapper_fa008",
+    "relative_path": "fake/Faceswapper_FS/033_Faceswapper_fa008.mp4",
+    "filename": "033_Faceswapper_fa008.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_033",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_035_Faceswapper_fa022",
+    "relative_path": "fake/Faceswapper_FS/035_Faceswapper_fa022.mp4",
+    "filename": "035_Faceswapper_fa022.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_035",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_039_Faceswapper_fa018",
+    "relative_path": "fake/Faceswapper_FS/039_Faceswapper_fa018.mp4",
+    "filename": "039_Faceswapper_fa018.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_039",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_041_Faceswapper_fa008",
+    "relative_path": "fake/Faceswapper_FS/041_Faceswapper_fa008.mp4",
+    "filename": "041_Faceswapper_fa008.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_041",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_043_Faceswapper_fa022",
+    "relative_path": "fake/Faceswapper_FS/043_Faceswapper_fa022.mp4",
+    "filename": "043_Faceswapper_fa022.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_043",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Faceswapper_045_Faceswapper_fa007",
+    "relative_path": "fake/Faceswapper_FS/045_Faceswapper_fa007.mp4",
+    "filename": "045_Faceswapper_fa007.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Faceswapper",
+    "split_group": "target_045",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_001_Kaggle_fa021",
+    "relative_path": "fake/Kaggle_FS/001_Kaggle_fa021.mp4",
+    "filename": "001_Kaggle_fa021.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_001",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_009_Kaggle_fa020",
+    "relative_path": "fake/Kaggle_FS/009_Kaggle_fa020.mp4",
+    "filename": "009_Kaggle_fa020.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_009",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_015_Kaggle_fa011",
+    "relative_path": "fake/Kaggle_FS/015_Kaggle_fa011.mp4",
+    "filename": "015_Kaggle_fa011.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_015",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_017_Kaggle_fa005",
+    "relative_path": "fake/Kaggle_FS/017_Kaggle_fa005.mp4",
+    "filename": "017_Kaggle_fa005.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_017",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_019_Kaggle_fa010",
+    "relative_path": "fake/Kaggle_FS/019_Kaggle_fa010.mp4",
+    "filename": "019_Kaggle_fa010.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_019",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_020_Kaggle_fa015",
+    "relative_path": "fake/Kaggle_FS/020_Kaggle_fa015.mp4",
+    "filename": "020_Kaggle_fa015.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_020",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_023_Kaggle_fa001",
+    "relative_path": "fake/Kaggle_FS/023_Kaggle_fa001.mp4",
+    "filename": "023_Kaggle_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_023",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_025_Kaggle_fa001",
+    "relative_path": "fake/Kaggle_FS/025_Kaggle_fa001.mp4",
+    "filename": "025_Kaggle_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_025",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_026_Kaggle_fa001",
+    "relative_path": "fake/Kaggle_FS/026_Kaggle_fa001.mp4",
+    "filename": "026_Kaggle_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_026",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_028_Kaggle_fa007",
+    "relative_path": "fake/Kaggle_FS/028_Kaggle_fa007.mp4",
+    "filename": "028_Kaggle_fa007.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_028",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_029_Kaggle_fa020",
+    "relative_path": "fake/Kaggle_FS/029_Kaggle_fa020.mp4",
+    "filename": "029_Kaggle_fa020.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_029",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_031_Kaggle_fa018",
+    "relative_path": "fake/Kaggle_FS/031_Kaggle_fa018.mp4",
+    "filename": "031_Kaggle_fa018.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_031",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_033_Kaggle_fa008",
+    "relative_path": "fake/Kaggle_FS/033_Kaggle_fa008.mp4",
+    "filename": "033_Kaggle_fa008.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_033",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_035_Kaggle_fa022",
+    "relative_path": "fake/Kaggle_FS/035_Kaggle_fa022.mp4",
+    "filename": "035_Kaggle_fa022.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_035",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_039_Kaggle_fa018",
+    "relative_path": "fake/Kaggle_FS/039_Kaggle_fa018.mp4",
+    "filename": "039_Kaggle_fa018.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_039",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_Kaggle_043_Kaggle_fa022",
+    "relative_path": "fake/Kaggle_FS/043_Kaggle_fa022.mp4",
+    "filename": "043_Kaggle_fa022.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "Kaggle",
+    "split_group": "target_043",
+    "metadata": {}
+  },
+  {
+    "video_id": "synthetic_KlingAI_1",
+    "relative_path": "fake/KlingAI_SYN/1.mp4",
+    "filename": "1.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_1",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_10",
+    "relative_path": "fake/KlingAI_SYN/10.mp4",
+    "filename": "10.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_10",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_11",
+    "relative_path": "fake/KlingAI_SYN/11.mp4",
+    "filename": "11.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_11",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_12",
+    "relative_path": "fake/KlingAI_SYN/12.mp4",
+    "filename": "12.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_12",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_13",
+    "relative_path": "fake/KlingAI_SYN/13.mp4",
+    "filename": "13.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_13",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_14",
+    "relative_path": "fake/KlingAI_SYN/14.mp4",
+    "filename": "14.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_14",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_15",
+    "relative_path": "fake/KlingAI_SYN/15.mp4",
+    "filename": "15.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_15",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_16",
+    "relative_path": "fake/KlingAI_SYN/16.mp4",
+    "filename": "16.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_16",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_17",
+    "relative_path": "fake/KlingAI_SYN/17.mp4",
+    "filename": "17.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_17",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_18",
+    "relative_path": "fake/KlingAI_SYN/18.mp4",
+    "filename": "18.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_18",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_19",
+    "relative_path": "fake/KlingAI_SYN/19.mp4",
+    "filename": "19.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_19",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_2",
+    "relative_path": "fake/KlingAI_SYN/2.mp4",
+    "filename": "2.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_2",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_20",
+    "relative_path": "fake/KlingAI_SYN/20.mp4",
+    "filename": "20.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_20",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_3",
+    "relative_path": "fake/KlingAI_SYN/3.mp4",
+    "filename": "3.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_3",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_4",
+    "relative_path": "fake/KlingAI_SYN/4.mp4",
+    "filename": "4.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_4",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_5",
+    "relative_path": "fake/KlingAI_SYN/5.mp4",
+    "filename": "5.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_5",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_6",
+    "relative_path": "fake/KlingAI_SYN/6.mp4",
+    "filename": "6.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_6",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_7",
+    "relative_path": "fake/KlingAI_SYN/7.mp4",
+    "filename": "7.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_7",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_8",
+    "relative_path": "fake/KlingAI_SYN/8.mp4",
+    "filename": "8.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_8",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_KlingAI_9",
+    "relative_path": "fake/KlingAI_SYN/9.mp4",
+    "filename": "9.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "KlingAI",
+    "split_group": "prompt_9",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake1",
+    "relative_path": "fake/Luma_SYN/deepfake1.mp4",
+    "filename": "deepfake1.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_1",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake10",
+    "relative_path": "fake/Luma_SYN/deepfake10.mp4",
+    "filename": "deepfake10.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_10",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake11",
+    "relative_path": "fake/Luma_SYN/deepfake11.mp4",
+    "filename": "deepfake11.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_11",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake12",
+    "relative_path": "fake/Luma_SYN/deepfake12.mp4",
+    "filename": "deepfake12.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_12",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake13",
+    "relative_path": "fake/Luma_SYN/deepfake13.mp4",
+    "filename": "deepfake13.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_13",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake14",
+    "relative_path": "fake/Luma_SYN/deepfake14.mp4",
+    "filename": "deepfake14.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_14",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake15",
+    "relative_path": "fake/Luma_SYN/deepfake15.mp4",
+    "filename": "deepfake15.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_15",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake16",
+    "relative_path": "fake/Luma_SYN/deepfake16.mp4",
+    "filename": "deepfake16.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_16",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake17",
+    "relative_path": "fake/Luma_SYN/deepfake17.mp4",
+    "filename": "deepfake17.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_17",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake18",
+    "relative_path": "fake/Luma_SYN/deepfake18.mp4",
+    "filename": "deepfake18.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_18",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake19",
+    "relative_path": "fake/Luma_SYN/deepfake19.mp4",
+    "filename": "deepfake19.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_19",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake2",
+    "relative_path": "fake/Luma_SYN/deepfake2.mp4",
+    "filename": "deepfake2.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_2",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake20",
+    "relative_path": "fake/Luma_SYN/deepfake20.mp4",
+    "filename": "deepfake20.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_20",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake21",
+    "relative_path": "fake/Luma_SYN/deepfake21.mp4",
+    "filename": "deepfake21.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_21",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake3",
+    "relative_path": "fake/Luma_SYN/deepfake3.mp4",
+    "filename": "deepfake3.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_3",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake4",
+    "relative_path": "fake/Luma_SYN/deepfake4.mp4",
+    "filename": "deepfake4.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_4",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake5",
+    "relative_path": "fake/Luma_SYN/deepfake5.mp4",
+    "filename": "deepfake5.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_5",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake6",
+    "relative_path": "fake/Luma_SYN/deepfake6.mp4",
+    "filename": "deepfake6.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_6",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake7",
+    "relative_path": "fake/Luma_SYN/deepfake7.mp4",
+    "filename": "deepfake7.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_7",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake8",
+    "relative_path": "fake/Luma_SYN/deepfake8.mp4",
+    "filename": "deepfake8.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_8",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Luma_deepfake9",
+    "relative_path": "fake/Luma_SYN/deepfake9.mp4",
+    "filename": "deepfake9.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Luma",
+    "split_group": "prompt_9",
+    "metadata": {
+      "gender": null,
+      "skin_color": null,
+      "head_movement": null,
+      "lighting": null
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_1",
+    "relative_path": "fake/Pika_SYN/1.mp4",
+    "filename": "1.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_1",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_10",
+    "relative_path": "fake/Pika_SYN/10.mp4",
+    "filename": "10.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_10",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_11",
+    "relative_path": "fake/Pika_SYN/11.mp4",
+    "filename": "11.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_11",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_12",
+    "relative_path": "fake/Pika_SYN/12.mp4",
+    "filename": "12.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_12",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_13",
+    "relative_path": "fake/Pika_SYN/13.mp4",
+    "filename": "13.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_13",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_14",
+    "relative_path": "fake/Pika_SYN/14.mp4",
+    "filename": "14.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_14",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_15",
+    "relative_path": "fake/Pika_SYN/15.mp4",
+    "filename": "15.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_15",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_16",
+    "relative_path": "fake/Pika_SYN/16.mp4",
+    "filename": "16.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_16",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_17",
+    "relative_path": "fake/Pika_SYN/17.mp4",
+    "filename": "17.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_17",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_18",
+    "relative_path": "fake/Pika_SYN/18.mp4",
+    "filename": "18.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_18",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_19",
+    "relative_path": "fake/Pika_SYN/19.mp4",
+    "filename": "19.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_19",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_2",
+    "relative_path": "fake/Pika_SYN/2.mp4",
+    "filename": "2.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_2",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_20",
+    "relative_path": "fake/Pika_SYN/20.mp4",
+    "filename": "20.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_20",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_3",
+    "relative_path": "fake/Pika_SYN/3.mp4",
+    "filename": "3.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_3",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_4",
+    "relative_path": "fake/Pika_SYN/4.mp4",
+    "filename": "4.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_4",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_5",
+    "relative_path": "fake/Pika_SYN/5.mp4",
+    "filename": "5.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_5",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_6",
+    "relative_path": "fake/Pika_SYN/6.mp4",
+    "filename": "6.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_6",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_7",
+    "relative_path": "fake/Pika_SYN/7.mp4",
+    "filename": "7.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_7",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_8",
+    "relative_path": "fake/Pika_SYN/8.mp4",
+    "filename": "8.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_8",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Pika_9",
+    "relative_path": "fake/Pika_SYN/9.mp4",
+    "filename": "9.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Pika",
+    "split_group": "prompt_9",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_1",
+    "relative_path": "fake/PixVerse_SYN/1.mp4",
+    "filename": "1.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_1",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_10",
+    "relative_path": "fake/PixVerse_SYN/10.mp4",
+    "filename": "10.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_10",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_11",
+    "relative_path": "fake/PixVerse_SYN/11.mp4",
+    "filename": "11.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_11",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_12",
+    "relative_path": "fake/PixVerse_SYN/12.mp4",
+    "filename": "12.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_12",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_13",
+    "relative_path": "fake/PixVerse_SYN/13.mp4",
+    "filename": "13.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_13",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_14",
+    "relative_path": "fake/PixVerse_SYN/14.mp4",
+    "filename": "14.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_14",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_15",
+    "relative_path": "fake/PixVerse_SYN/15.mp4",
+    "filename": "15.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_15",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_16",
+    "relative_path": "fake/PixVerse_SYN/16.mp4",
+    "filename": "16.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_16",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_17",
+    "relative_path": "fake/PixVerse_SYN/17.mp4",
+    "filename": "17.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_17",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_18",
+    "relative_path": "fake/PixVerse_SYN/18.mp4",
+    "filename": "18.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_18",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_19",
+    "relative_path": "fake/PixVerse_SYN/19.mp4",
+    "filename": "19.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_19",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_2",
+    "relative_path": "fake/PixVerse_SYN/2.mp4",
+    "filename": "2.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_2",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_20",
+    "relative_path": "fake/PixVerse_SYN/20.mp4",
+    "filename": "20.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_20",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_3",
+    "relative_path": "fake/PixVerse_SYN/3.mp4",
+    "filename": "3.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_3",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_4",
+    "relative_path": "fake/PixVerse_SYN/4.mp4",
+    "filename": "4.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_4",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_5",
+    "relative_path": "fake/PixVerse_SYN/5.mp4",
+    "filename": "5.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_5",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_6",
+    "relative_path": "fake/PixVerse_SYN/6.mp4",
+    "filename": "6.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_6",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_7",
+    "relative_path": "fake/PixVerse_SYN/7.mp4",
+    "filename": "7.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_7",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_8",
+    "relative_path": "fake/PixVerse_SYN/8.mp4",
+    "filename": "8.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_8",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_PixVerse_9",
+    "relative_path": "fake/PixVerse_SYN/9.mp4",
+    "filename": "9.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "PixVerse",
+    "split_group": "prompt_9",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "face_swap_RefaceAI_001_RefaceAI_fa021",
+    "relative_path": "fake/RefaceAI_FS/001_RefaceAI_fa021.mp4",
+    "filename": "001_RefaceAI_fa021.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_001",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_009_RefaceAI_fa020",
+    "relative_path": "fake/RefaceAI_FS/009_RefaceAI_fa020.mp4",
+    "filename": "009_RefaceAI_fa020.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_009",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_015_RefaceAI_fa011",
+    "relative_path": "fake/RefaceAI_FS/015_RefaceAI_fa011.mp4",
+    "filename": "015_RefaceAI_fa011.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_015",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_017_RefaceAI_fa005",
+    "relative_path": "fake/RefaceAI_FS/017_RefaceAI_fa005.mp4",
+    "filename": "017_RefaceAI_fa005.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_017",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_019_RefaceAI_fa010",
+    "relative_path": "fake/RefaceAI_FS/019_RefaceAI_fa010.mp4",
+    "filename": "019_RefaceAI_fa010.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_019",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_020_RefaceAI_fa015",
+    "relative_path": "fake/RefaceAI_FS/020_RefaceAI_fa015.mp4",
+    "filename": "020_RefaceAI_fa015.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_020",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_023_RefaceAI_fa001",
+    "relative_path": "fake/RefaceAI_FS/023_RefaceAI_fa001.mp4",
+    "filename": "023_RefaceAI_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_023",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_025_RefaceAI_fa001",
+    "relative_path": "fake/RefaceAI_FS/025_RefaceAI_fa001.mp4",
+    "filename": "025_RefaceAI_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_025",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_026_RefaceAI_fa001",
+    "relative_path": "fake/RefaceAI_FS/026_RefaceAI_fa001.mp4",
+    "filename": "026_RefaceAI_fa001.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_026",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_028_RefaceAI_fa007",
+    "relative_path": "fake/RefaceAI_FS/028_RefaceAI_fa007.mp4",
+    "filename": "028_RefaceAI_fa007.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_028",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_029_RefaceAI_fa020",
+    "relative_path": "fake/RefaceAI_FS/029_RefaceAI_fa020.mp4",
+    "filename": "029_RefaceAI_fa020.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_029",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_031_RefaceAI_fa018",
+    "relative_path": "fake/RefaceAI_FS/031_RefaceAI_fa018.mp4",
+    "filename": "031_RefaceAI_fa018.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_031",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_033_RefaceAI_fa008",
+    "relative_path": "fake/RefaceAI_FS/033_RefaceAI_fa008.mp4",
+    "filename": "033_RefaceAI_fa008.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_033",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_035_RefaceAI_fa022",
+    "relative_path": "fake/RefaceAI_FS/035_RefaceAI_fa022.mp4",
+    "filename": "035_RefaceAI_fa022.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_035",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_041_RefaceAI_fa008",
+    "relative_path": "fake/RefaceAI_FS/041_RefaceAI_fa008.mp4",
+    "filename": "041_RefaceAI_fa008.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_041",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_043_RefaceAI_fa022",
+    "relative_path": "fake/RefaceAI_FS/043_RefaceAI_fa022.mp4",
+    "filename": "043_RefaceAI_fa022.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_043",
+    "metadata": {}
+  },
+  {
+    "video_id": "face_swap_RefaceAI_045_RefaceAI_fa007",
+    "relative_path": "fake/RefaceAI_FS/045_RefaceAI_fa007.mp4",
+    "filename": "045_RefaceAI_fa007.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "face_swap",
+    "generator": "RefaceAI",
+    "split_group": "target_045",
+    "metadata": {}
+  },
+  {
+    "video_id": "synthetic_Runway_1",
+    "relative_path": "fake/Runway_SYN/1.mp4",
+    "filename": "1.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_1",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_10",
+    "relative_path": "fake/Runway_SYN/10.mp4",
+    "filename": "10.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_10",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_11",
+    "relative_path": "fake/Runway_SYN/11.mp4",
+    "filename": "11.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_11",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_12",
+    "relative_path": "fake/Runway_SYN/12.mp4",
+    "filename": "12.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_12",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_13",
+    "relative_path": "fake/Runway_SYN/13.mp4",
+    "filename": "13.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_13",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_14",
+    "relative_path": "fake/Runway_SYN/14.mp4",
+    "filename": "14.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_14",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_15",
+    "relative_path": "fake/Runway_SYN/15.mp4",
+    "filename": "15.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_15",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_16",
+    "relative_path": "fake/Runway_SYN/16.mp4",
+    "filename": "16.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_16",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_17",
+    "relative_path": "fake/Runway_SYN/17.mp4",
+    "filename": "17.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_17",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_18",
+    "relative_path": "fake/Runway_SYN/18.mp4",
+    "filename": "18.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_18",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_19",
+    "relative_path": "fake/Runway_SYN/19.mp4",
+    "filename": "19.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_19",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_2",
+    "relative_path": "fake/Runway_SYN/2.mp4",
+    "filename": "2.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_2",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_20",
+    "relative_path": "fake/Runway_SYN/20.mp4",
+    "filename": "20.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_20",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_3",
+    "relative_path": "fake/Runway_SYN/3.mp4",
+    "filename": "3.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_3",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_4",
+    "relative_path": "fake/Runway_SYN/4.mp4",
+    "filename": "4.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_4",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_5",
+    "relative_path": "fake/Runway_SYN/5.mp4",
+    "filename": "5.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_5",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_6",
+    "relative_path": "fake/Runway_SYN/6.mp4",
+    "filename": "6.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_6",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_7",
+    "relative_path": "fake/Runway_SYN/7.mp4",
+    "filename": "7.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_7",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_8",
+    "relative_path": "fake/Runway_SYN/8.mp4",
+    "filename": "8.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_8",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Runway_9",
+    "relative_path": "fake/Runway_SYN/9.mp4",
+    "filename": "9.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Runway",
+    "split_group": "prompt_9",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_1",
+    "relative_path": "fake/Sora_SYN/1.mp4",
+    "filename": "1.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_1",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_10",
+    "relative_path": "fake/Sora_SYN/10.mp4",
+    "filename": "10.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_10",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_11",
+    "relative_path": "fake/Sora_SYN/11.mp4",
+    "filename": "11.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_11",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_12",
+    "relative_path": "fake/Sora_SYN/12.mp4",
+    "filename": "12.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_12",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_13",
+    "relative_path": "fake/Sora_SYN/13.mp4",
+    "filename": "13.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_13",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_14",
+    "relative_path": "fake/Sora_SYN/14.mp4",
+    "filename": "14.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_14",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_15",
+    "relative_path": "fake/Sora_SYN/15.mp4",
+    "filename": "15.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_15",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_16",
+    "relative_path": "fake/Sora_SYN/16.mp4",
+    "filename": "16.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_16",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_17",
+    "relative_path": "fake/Sora_SYN/17.mp4",
+    "filename": "17.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_17",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_18",
+    "relative_path": "fake/Sora_SYN/18.mp4",
+    "filename": "18.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_18",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_19",
+    "relative_path": "fake/Sora_SYN/19.mp4",
+    "filename": "19.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_19",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_2",
+    "relative_path": "fake/Sora_SYN/2.mp4",
+    "filename": "2.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_2",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_20",
+    "relative_path": "fake/Sora_SYN/20.mp4",
+    "filename": "20.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_20",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_21",
+    "relative_path": "fake/Sora_SYN/21.mp4",
+    "filename": "21.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_21",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_22",
+    "relative_path": "fake/Sora_SYN/22.mp4",
+    "filename": "22.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_22",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_23",
+    "relative_path": "fake/Sora_SYN/23.mp4",
+    "filename": "23.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_23",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_24",
+    "relative_path": "fake/Sora_SYN/24.mp4",
+    "filename": "24.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_24",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_25",
+    "relative_path": "fake/Sora_SYN/25.mp4",
+    "filename": "25.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_25",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "white",
+      "head_movement": "yes",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_26",
+    "relative_path": "fake/Sora_SYN/26.mp4",
+    "filename": "26.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_26",
+    "metadata": {
+      "gender": "man",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_3",
+    "relative_path": "fake/Sora_SYN/3.mp4",
+    "filename": "3.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_3",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_4",
+    "relative_path": "fake/Sora_SYN/4.mp4",
+    "filename": "4.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_4",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "bad"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_5",
+    "relative_path": "fake/Sora_SYN/5.mp4",
+    "filename": "5.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_5",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_6",
+    "relative_path": "fake/Sora_SYN/6.mp4",
+    "filename": "6.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_6",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "white",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_7",
+    "relative_path": "fake/Sora_SYN/7.mp4",
+    "filename": "7.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_7",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "asian",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_8",
+    "relative_path": "fake/Sora_SYN/8.mp4",
+    "filename": "8.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_8",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "synthetic_Sora_9",
+    "relative_path": "fake/Sora_SYN/9.mp4",
+    "filename": "9.mp4",
+    "label": 1,
+    "label_name": "fake",
+    "category": "synthetic",
+    "generator": "Sora",
+    "split_group": "prompt_9",
+    "metadata": {
+      "gender": "woman",
+      "skin_color": "person of color",
+      "head_movement": "no",
+      "lighting": "well-lit"
+    }
+  },
+  {
+    "video_id": "real_CelebDF_id0_0000",
+    "relative_path": "real/CelebDF/id0_0000.mp4",
+    "filename": "id0_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id0",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id0_0001",
+    "relative_path": "real/CelebDF/id0_0001.mp4",
+    "filename": "id0_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id0",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id0_0002",
+    "relative_path": "real/CelebDF/id0_0002.mp4",
+    "filename": "id0_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id0",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id0_0003",
+    "relative_path": "real/CelebDF/id0_0003.mp4",
+    "filename": "id0_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id0",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id0_0004",
+    "relative_path": "real/CelebDF/id0_0004.mp4",
+    "filename": "id0_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id0",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id0_0005",
+    "relative_path": "real/CelebDF/id0_0005.mp4",
+    "filename": "id0_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id0",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id0_0006",
+    "relative_path": "real/CelebDF/id0_0006.mp4",
+    "filename": "id0_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id0",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id0_0007",
+    "relative_path": "real/CelebDF/id0_0007.mp4",
+    "filename": "id0_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id0",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id0_0008",
+    "relative_path": "real/CelebDF/id0_0008.mp4",
+    "filename": "id0_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id0",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id0_0009",
+    "relative_path": "real/CelebDF/id0_0009.mp4",
+    "filename": "id0_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id0",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id10_0002",
+    "relative_path": "real/CelebDF/id10_0002.mp4",
+    "filename": "id10_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id10",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id10_0003",
+    "relative_path": "real/CelebDF/id10_0003.mp4",
+    "filename": "id10_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id10",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id10_0004",
+    "relative_path": "real/CelebDF/id10_0004.mp4",
+    "filename": "id10_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id10",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id10_0005",
+    "relative_path": "real/CelebDF/id10_0005.mp4",
+    "filename": "id10_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id10",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id10_0007",
+    "relative_path": "real/CelebDF/id10_0007.mp4",
+    "filename": "id10_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id10",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id10_0008",
+    "relative_path": "real/CelebDF/id10_0008.mp4",
+    "filename": "id10_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id10",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id10_0009",
+    "relative_path": "real/CelebDF/id10_0009.mp4",
+    "filename": "id10_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id10",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id11_0001",
+    "relative_path": "real/CelebDF/id11_0001.mp4",
+    "filename": "id11_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id11",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id11_0002",
+    "relative_path": "real/CelebDF/id11_0002.mp4",
+    "filename": "id11_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id11",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id11_0003",
+    "relative_path": "real/CelebDF/id11_0003.mp4",
+    "filename": "id11_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id11",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id11_0004",
+    "relative_path": "real/CelebDF/id11_0004.mp4",
+    "filename": "id11_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id11",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id11_0005",
+    "relative_path": "real/CelebDF/id11_0005.mp4",
+    "filename": "id11_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id11",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id11_0006",
+    "relative_path": "real/CelebDF/id11_0006.mp4",
+    "filename": "id11_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id11",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id11_0007",
+    "relative_path": "real/CelebDF/id11_0007.mp4",
+    "filename": "id11_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id11",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id11_0008",
+    "relative_path": "real/CelebDF/id11_0008.mp4",
+    "filename": "id11_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id11",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id11_0009",
+    "relative_path": "real/CelebDF/id11_0009.mp4",
+    "filename": "id11_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id11",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id11_0010",
+    "relative_path": "real/CelebDF/id11_0010.mp4",
+    "filename": "id11_0010.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id11",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id12_0000",
+    "relative_path": "real/CelebDF/id12_0000.mp4",
+    "filename": "id12_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id12",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id12_0001",
+    "relative_path": "real/CelebDF/id12_0001.mp4",
+    "filename": "id12_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id12",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id12_0002",
+    "relative_path": "real/CelebDF/id12_0002.mp4",
+    "filename": "id12_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id12",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id12_0003",
+    "relative_path": "real/CelebDF/id12_0003.mp4",
+    "filename": "id12_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id12",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id12_0004",
+    "relative_path": "real/CelebDF/id12_0004.mp4",
+    "filename": "id12_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id12",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id12_0005",
+    "relative_path": "real/CelebDF/id12_0005.mp4",
+    "filename": "id12_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id12",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id12_0006",
+    "relative_path": "real/CelebDF/id12_0006.mp4",
+    "filename": "id12_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id12",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0000",
+    "relative_path": "real/CelebDF/id13_0000.mp4",
+    "filename": "id13_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0001",
+    "relative_path": "real/CelebDF/id13_0001.mp4",
+    "filename": "id13_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0002",
+    "relative_path": "real/CelebDF/id13_0002.mp4",
+    "filename": "id13_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0003",
+    "relative_path": "real/CelebDF/id13_0003.mp4",
+    "filename": "id13_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0004",
+    "relative_path": "real/CelebDF/id13_0004.mp4",
+    "filename": "id13_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0005",
+    "relative_path": "real/CelebDF/id13_0005.mp4",
+    "filename": "id13_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0006",
+    "relative_path": "real/CelebDF/id13_0006.mp4",
+    "filename": "id13_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0007",
+    "relative_path": "real/CelebDF/id13_0007.mp4",
+    "filename": "id13_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0008",
+    "relative_path": "real/CelebDF/id13_0008.mp4",
+    "filename": "id13_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0009",
+    "relative_path": "real/CelebDF/id13_0009.mp4",
+    "filename": "id13_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0010",
+    "relative_path": "real/CelebDF/id13_0010.mp4",
+    "filename": "id13_0010.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0011",
+    "relative_path": "real/CelebDF/id13_0011.mp4",
+    "filename": "id13_0011.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0012",
+    "relative_path": "real/CelebDF/id13_0012.mp4",
+    "filename": "id13_0012.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0013",
+    "relative_path": "real/CelebDF/id13_0013.mp4",
+    "filename": "id13_0013.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0014",
+    "relative_path": "real/CelebDF/id13_0014.mp4",
+    "filename": "id13_0014.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id13_0015",
+    "relative_path": "real/CelebDF/id13_0015.mp4",
+    "filename": "id13_0015.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id13",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0000",
+    "relative_path": "real/CelebDF/id16_0000.mp4",
+    "filename": "id16_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0001",
+    "relative_path": "real/CelebDF/id16_0001.mp4",
+    "filename": "id16_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0002",
+    "relative_path": "real/CelebDF/id16_0002.mp4",
+    "filename": "id16_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0003",
+    "relative_path": "real/CelebDF/id16_0003.mp4",
+    "filename": "id16_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0004",
+    "relative_path": "real/CelebDF/id16_0004.mp4",
+    "filename": "id16_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0005",
+    "relative_path": "real/CelebDF/id16_0005.mp4",
+    "filename": "id16_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0007",
+    "relative_path": "real/CelebDF/id16_0007.mp4",
+    "filename": "id16_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0008",
+    "relative_path": "real/CelebDF/id16_0008.mp4",
+    "filename": "id16_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0009",
+    "relative_path": "real/CelebDF/id16_0009.mp4",
+    "filename": "id16_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0010",
+    "relative_path": "real/CelebDF/id16_0010.mp4",
+    "filename": "id16_0010.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0011",
+    "relative_path": "real/CelebDF/id16_0011.mp4",
+    "filename": "id16_0011.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0012",
+    "relative_path": "real/CelebDF/id16_0012.mp4",
+    "filename": "id16_0012.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id16_0013",
+    "relative_path": "real/CelebDF/id16_0013.mp4",
+    "filename": "id16_0013.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id16",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id17_0000",
+    "relative_path": "real/CelebDF/id17_0000.mp4",
+    "filename": "id17_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id17",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id17_0001",
+    "relative_path": "real/CelebDF/id17_0001.mp4",
+    "filename": "id17_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id17",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id17_0002",
+    "relative_path": "real/CelebDF/id17_0002.mp4",
+    "filename": "id17_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id17",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id17_0004",
+    "relative_path": "real/CelebDF/id17_0004.mp4",
+    "filename": "id17_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id17",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id17_0005",
+    "relative_path": "real/CelebDF/id17_0005.mp4",
+    "filename": "id17_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id17",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id17_0007",
+    "relative_path": "real/CelebDF/id17_0007.mp4",
+    "filename": "id17_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id17",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id17_0009",
+    "relative_path": "real/CelebDF/id17_0009.mp4",
+    "filename": "id17_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id17",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id1_0000",
+    "relative_path": "real/CelebDF/id1_0000.mp4",
+    "filename": "id1_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id1",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id1_0001",
+    "relative_path": "real/CelebDF/id1_0001.mp4",
+    "filename": "id1_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id1",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id1_0002",
+    "relative_path": "real/CelebDF/id1_0002.mp4",
+    "filename": "id1_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id1",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id1_0003",
+    "relative_path": "real/CelebDF/id1_0003.mp4",
+    "filename": "id1_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id1",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id1_0004",
+    "relative_path": "real/CelebDF/id1_0004.mp4",
+    "filename": "id1_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id1",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id1_0005",
+    "relative_path": "real/CelebDF/id1_0005.mp4",
+    "filename": "id1_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id1",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id1_0006",
+    "relative_path": "real/CelebDF/id1_0006.mp4",
+    "filename": "id1_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id1",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id1_0007",
+    "relative_path": "real/CelebDF/id1_0007.mp4",
+    "filename": "id1_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id1",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id1_0008",
+    "relative_path": "real/CelebDF/id1_0008.mp4",
+    "filename": "id1_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id1",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id1_0009",
+    "relative_path": "real/CelebDF/id1_0009.mp4",
+    "filename": "id1_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id1",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id20_0000",
+    "relative_path": "real/CelebDF/id20_0000.mp4",
+    "filename": "id20_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id20",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id20_0001",
+    "relative_path": "real/CelebDF/id20_0001.mp4",
+    "filename": "id20_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id20",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id20_0002",
+    "relative_path": "real/CelebDF/id20_0002.mp4",
+    "filename": "id20_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id20",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id20_0003",
+    "relative_path": "real/CelebDF/id20_0003.mp4",
+    "filename": "id20_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id20",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id20_0006",
+    "relative_path": "real/CelebDF/id20_0006.mp4",
+    "filename": "id20_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id20",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id20_0007",
+    "relative_path": "real/CelebDF/id20_0007.mp4",
+    "filename": "id20_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id20",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id20_0008",
+    "relative_path": "real/CelebDF/id20_0008.mp4",
+    "filename": "id20_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id20",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id20_0009",
+    "relative_path": "real/CelebDF/id20_0009.mp4",
+    "filename": "id20_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id20",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id21_0000",
+    "relative_path": "real/CelebDF/id21_0000.mp4",
+    "filename": "id21_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id21",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id21_0001",
+    "relative_path": "real/CelebDF/id21_0001.mp4",
+    "filename": "id21_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id21",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id21_0002",
+    "relative_path": "real/CelebDF/id21_0002.mp4",
+    "filename": "id21_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id21",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id21_0003",
+    "relative_path": "real/CelebDF/id21_0003.mp4",
+    "filename": "id21_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id21",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id21_0004",
+    "relative_path": "real/CelebDF/id21_0004.mp4",
+    "filename": "id21_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id21",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id21_0005",
+    "relative_path": "real/CelebDF/id21_0005.mp4",
+    "filename": "id21_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id21",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id21_0006",
+    "relative_path": "real/CelebDF/id21_0006.mp4",
+    "filename": "id21_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id21",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id21_0007",
+    "relative_path": "real/CelebDF/id21_0007.mp4",
+    "filename": "id21_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id21",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id21_0008",
+    "relative_path": "real/CelebDF/id21_0008.mp4",
+    "filename": "id21_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id21",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id21_0009",
+    "relative_path": "real/CelebDF/id21_0009.mp4",
+    "filename": "id21_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id21",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id2_0000",
+    "relative_path": "real/CelebDF/id2_0000.mp4",
+    "filename": "id2_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id2",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id2_0001",
+    "relative_path": "real/CelebDF/id2_0001.mp4",
+    "filename": "id2_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id2",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id2_0002",
+    "relative_path": "real/CelebDF/id2_0002.mp4",
+    "filename": "id2_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id2",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id2_0003",
+    "relative_path": "real/CelebDF/id2_0003.mp4",
+    "filename": "id2_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id2",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id2_0004",
+    "relative_path": "real/CelebDF/id2_0004.mp4",
+    "filename": "id2_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id2",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id2_0005",
+    "relative_path": "real/CelebDF/id2_0005.mp4",
+    "filename": "id2_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id2",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id2_0006",
+    "relative_path": "real/CelebDF/id2_0006.mp4",
+    "filename": "id2_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id2",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id2_0007",
+    "relative_path": "real/CelebDF/id2_0007.mp4",
+    "filename": "id2_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id2",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id2_0008",
+    "relative_path": "real/CelebDF/id2_0008.mp4",
+    "filename": "id2_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id2",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id2_0009",
+    "relative_path": "real/CelebDF/id2_0009.mp4",
+    "filename": "id2_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id2",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id36_0000",
+    "relative_path": "real/CelebDF/id36_0000.mp4",
+    "filename": "id36_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id36",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id36_0002",
+    "relative_path": "real/CelebDF/id36_0002.mp4",
+    "filename": "id36_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id36",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id36_0003",
+    "relative_path": "real/CelebDF/id36_0003.mp4",
+    "filename": "id36_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id36",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id36_0004",
+    "relative_path": "real/CelebDF/id36_0004.mp4",
+    "filename": "id36_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id36",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id36_0005",
+    "relative_path": "real/CelebDF/id36_0005.mp4",
+    "filename": "id36_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id36",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id36_0006",
+    "relative_path": "real/CelebDF/id36_0006.mp4",
+    "filename": "id36_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id36",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id36_0007",
+    "relative_path": "real/CelebDF/id36_0007.mp4",
+    "filename": "id36_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id36",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id36_0008",
+    "relative_path": "real/CelebDF/id36_0008.mp4",
+    "filename": "id36_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id36",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id36_0009",
+    "relative_path": "real/CelebDF/id36_0009.mp4",
+    "filename": "id36_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id36",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id38_0000",
+    "relative_path": "real/CelebDF/id38_0000.mp4",
+    "filename": "id38_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id38",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id38_0001",
+    "relative_path": "real/CelebDF/id38_0001.mp4",
+    "filename": "id38_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id38",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id38_0002",
+    "relative_path": "real/CelebDF/id38_0002.mp4",
+    "filename": "id38_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id38",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id38_0003",
+    "relative_path": "real/CelebDF/id38_0003.mp4",
+    "filename": "id38_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id38",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id38_0004",
+    "relative_path": "real/CelebDF/id38_0004.mp4",
+    "filename": "id38_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id38",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id38_0005",
+    "relative_path": "real/CelebDF/id38_0005.mp4",
+    "filename": "id38_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id38",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id38_0006",
+    "relative_path": "real/CelebDF/id38_0006.mp4",
+    "filename": "id38_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id38",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id38_0007",
+    "relative_path": "real/CelebDF/id38_0007.mp4",
+    "filename": "id38_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id38",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id38_0008",
+    "relative_path": "real/CelebDF/id38_0008.mp4",
+    "filename": "id38_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id38",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id39_0000",
+    "relative_path": "real/CelebDF/id39_0000.mp4",
+    "filename": "id39_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id39",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id39_0001",
+    "relative_path": "real/CelebDF/id39_0001.mp4",
+    "filename": "id39_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id39",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id39_0002",
+    "relative_path": "real/CelebDF/id39_0002.mp4",
+    "filename": "id39_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id39",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id39_0003",
+    "relative_path": "real/CelebDF/id39_0003.mp4",
+    "filename": "id39_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id39",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id39_0004",
+    "relative_path": "real/CelebDF/id39_0004.mp4",
+    "filename": "id39_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id39",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id39_0006",
+    "relative_path": "real/CelebDF/id39_0006.mp4",
+    "filename": "id39_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id39",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id39_0007",
+    "relative_path": "real/CelebDF/id39_0007.mp4",
+    "filename": "id39_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id39",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id39_0008",
+    "relative_path": "real/CelebDF/id39_0008.mp4",
+    "filename": "id39_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id39",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id39_0009",
+    "relative_path": "real/CelebDF/id39_0009.mp4",
+    "filename": "id39_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id39",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id3_0000",
+    "relative_path": "real/CelebDF/id3_0000.mp4",
+    "filename": "id3_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id3",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id3_0001",
+    "relative_path": "real/CelebDF/id3_0001.mp4",
+    "filename": "id3_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id3",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id3_0002",
+    "relative_path": "real/CelebDF/id3_0002.mp4",
+    "filename": "id3_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id3",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id3_0003",
+    "relative_path": "real/CelebDF/id3_0003.mp4",
+    "filename": "id3_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id3",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id3_0004",
+    "relative_path": "real/CelebDF/id3_0004.mp4",
+    "filename": "id3_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id3",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id3_0005",
+    "relative_path": "real/CelebDF/id3_0005.mp4",
+    "filename": "id3_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id3",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id3_0006",
+    "relative_path": "real/CelebDF/id3_0006.mp4",
+    "filename": "id3_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id3",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id3_0007",
+    "relative_path": "real/CelebDF/id3_0007.mp4",
+    "filename": "id3_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id3",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id3_0008",
+    "relative_path": "real/CelebDF/id3_0008.mp4",
+    "filename": "id3_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id3",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id3_0009",
+    "relative_path": "real/CelebDF/id3_0009.mp4",
+    "filename": "id3_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id3",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id40_0000",
+    "relative_path": "real/CelebDF/id40_0000.mp4",
+    "filename": "id40_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id40",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id40_0001",
+    "relative_path": "real/CelebDF/id40_0001.mp4",
+    "filename": "id40_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id40",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id40_0002",
+    "relative_path": "real/CelebDF/id40_0002.mp4",
+    "filename": "id40_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id40",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id40_0003",
+    "relative_path": "real/CelebDF/id40_0003.mp4",
+    "filename": "id40_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id40",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id40_0004",
+    "relative_path": "real/CelebDF/id40_0004.mp4",
+    "filename": "id40_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id40",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id40_0005",
+    "relative_path": "real/CelebDF/id40_0005.mp4",
+    "filename": "id40_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id40",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id40_0006",
+    "relative_path": "real/CelebDF/id40_0006.mp4",
+    "filename": "id40_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id40",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id40_0007",
+    "relative_path": "real/CelebDF/id40_0007.mp4",
+    "filename": "id40_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id40",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id40_0008",
+    "relative_path": "real/CelebDF/id40_0008.mp4",
+    "filename": "id40_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id40",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id40_0009",
+    "relative_path": "real/CelebDF/id40_0009.mp4",
+    "filename": "id40_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id40",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id41_0000",
+    "relative_path": "real/CelebDF/id41_0000.mp4",
+    "filename": "id41_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id41",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id41_0001",
+    "relative_path": "real/CelebDF/id41_0001.mp4",
+    "filename": "id41_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id41",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id41_0002",
+    "relative_path": "real/CelebDF/id41_0002.mp4",
+    "filename": "id41_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id41",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id41_0003",
+    "relative_path": "real/CelebDF/id41_0003.mp4",
+    "filename": "id41_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id41",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id41_0004",
+    "relative_path": "real/CelebDF/id41_0004.mp4",
+    "filename": "id41_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id41",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id41_0005",
+    "relative_path": "real/CelebDF/id41_0005.mp4",
+    "filename": "id41_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id41",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id41_0006",
+    "relative_path": "real/CelebDF/id41_0006.mp4",
+    "filename": "id41_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id41",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id41_0007",
+    "relative_path": "real/CelebDF/id41_0007.mp4",
+    "filename": "id41_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id41",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id41_0008",
+    "relative_path": "real/CelebDF/id41_0008.mp4",
+    "filename": "id41_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id41",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id41_0009",
+    "relative_path": "real/CelebDF/id41_0009.mp4",
+    "filename": "id41_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id41",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id42_0000",
+    "relative_path": "real/CelebDF/id42_0000.mp4",
+    "filename": "id42_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id42",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id42_0001",
+    "relative_path": "real/CelebDF/id42_0001.mp4",
+    "filename": "id42_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id42",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id42_0002",
+    "relative_path": "real/CelebDF/id42_0002.mp4",
+    "filename": "id42_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id42",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id42_0003",
+    "relative_path": "real/CelebDF/id42_0003.mp4",
+    "filename": "id42_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id42",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id42_0004",
+    "relative_path": "real/CelebDF/id42_0004.mp4",
+    "filename": "id42_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id42",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id43_0000",
+    "relative_path": "real/CelebDF/id43_0000.mp4",
+    "filename": "id43_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id43",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id43_0001",
+    "relative_path": "real/CelebDF/id43_0001.mp4",
+    "filename": "id43_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id43",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id43_0002",
+    "relative_path": "real/CelebDF/id43_0002.mp4",
+    "filename": "id43_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id43",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id43_0003",
+    "relative_path": "real/CelebDF/id43_0003.mp4",
+    "filename": "id43_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id43",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id43_0004",
+    "relative_path": "real/CelebDF/id43_0004.mp4",
+    "filename": "id43_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id43",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id43_0005",
+    "relative_path": "real/CelebDF/id43_0005.mp4",
+    "filename": "id43_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id43",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id43_0006",
+    "relative_path": "real/CelebDF/id43_0006.mp4",
+    "filename": "id43_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id43",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id43_0007",
+    "relative_path": "real/CelebDF/id43_0007.mp4",
+    "filename": "id43_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id43",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id43_0008",
+    "relative_path": "real/CelebDF/id43_0008.mp4",
+    "filename": "id43_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id43",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id43_0009",
+    "relative_path": "real/CelebDF/id43_0009.mp4",
+    "filename": "id43_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id43",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id44_0001",
+    "relative_path": "real/CelebDF/id44_0001.mp4",
+    "filename": "id44_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id44",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id44_0002",
+    "relative_path": "real/CelebDF/id44_0002.mp4",
+    "filename": "id44_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id44",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id44_0003",
+    "relative_path": "real/CelebDF/id44_0003.mp4",
+    "filename": "id44_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id44",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id44_0004",
+    "relative_path": "real/CelebDF/id44_0004.mp4",
+    "filename": "id44_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id44",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id44_0005",
+    "relative_path": "real/CelebDF/id44_0005.mp4",
+    "filename": "id44_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id44",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id48_0000",
+    "relative_path": "real/CelebDF/id48_0000.mp4",
+    "filename": "id48_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id48",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id48_0001",
+    "relative_path": "real/CelebDF/id48_0001.mp4",
+    "filename": "id48_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id48",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id48_0002",
+    "relative_path": "real/CelebDF/id48_0002.mp4",
+    "filename": "id48_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id48",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id48_0003",
+    "relative_path": "real/CelebDF/id48_0003.mp4",
+    "filename": "id48_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id48",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id48_0004",
+    "relative_path": "real/CelebDF/id48_0004.mp4",
+    "filename": "id48_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id48",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id48_0005",
+    "relative_path": "real/CelebDF/id48_0005.mp4",
+    "filename": "id48_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id48",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id48_0006",
+    "relative_path": "real/CelebDF/id48_0006.mp4",
+    "filename": "id48_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id48",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id48_0007",
+    "relative_path": "real/CelebDF/id48_0007.mp4",
+    "filename": "id48_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id48",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id48_0008",
+    "relative_path": "real/CelebDF/id48_0008.mp4",
+    "filename": "id48_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id48",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id48_0009",
+    "relative_path": "real/CelebDF/id48_0009.mp4",
+    "filename": "id48_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id48",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id49_0000",
+    "relative_path": "real/CelebDF/id49_0000.mp4",
+    "filename": "id49_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id49",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id49_0001",
+    "relative_path": "real/CelebDF/id49_0001.mp4",
+    "filename": "id49_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id49",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id49_0002",
+    "relative_path": "real/CelebDF/id49_0002.mp4",
+    "filename": "id49_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id49",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id49_0003",
+    "relative_path": "real/CelebDF/id49_0003.mp4",
+    "filename": "id49_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id49",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id49_0004",
+    "relative_path": "real/CelebDF/id49_0004.mp4",
+    "filename": "id49_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id49",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id49_0005",
+    "relative_path": "real/CelebDF/id49_0005.mp4",
+    "filename": "id49_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id49",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id49_0006",
+    "relative_path": "real/CelebDF/id49_0006.mp4",
+    "filename": "id49_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id49",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id49_0007",
+    "relative_path": "real/CelebDF/id49_0007.mp4",
+    "filename": "id49_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id49",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id49_0008",
+    "relative_path": "real/CelebDF/id49_0008.mp4",
+    "filename": "id49_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id49",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id49_0009",
+    "relative_path": "real/CelebDF/id49_0009.mp4",
+    "filename": "id49_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id49",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id4_0000",
+    "relative_path": "real/CelebDF/id4_0000.mp4",
+    "filename": "id4_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id4",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id4_0001",
+    "relative_path": "real/CelebDF/id4_0001.mp4",
+    "filename": "id4_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id4",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id4_0002",
+    "relative_path": "real/CelebDF/id4_0002.mp4",
+    "filename": "id4_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id4",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id4_0003",
+    "relative_path": "real/CelebDF/id4_0003.mp4",
+    "filename": "id4_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id4",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id4_0004",
+    "relative_path": "real/CelebDF/id4_0004.mp4",
+    "filename": "id4_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id4",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id4_0005",
+    "relative_path": "real/CelebDF/id4_0005.mp4",
+    "filename": "id4_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id4",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id4_0006",
+    "relative_path": "real/CelebDF/id4_0006.mp4",
+    "filename": "id4_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id4",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id4_0007",
+    "relative_path": "real/CelebDF/id4_0007.mp4",
+    "filename": "id4_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id4",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id4_0008",
+    "relative_path": "real/CelebDF/id4_0008.mp4",
+    "filename": "id4_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id4",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id4_0009",
+    "relative_path": "real/CelebDF/id4_0009.mp4",
+    "filename": "id4_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id4",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id59_0000",
+    "relative_path": "real/CelebDF/id59_0000.mp4",
+    "filename": "id59_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id59",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id59_0001",
+    "relative_path": "real/CelebDF/id59_0001.mp4",
+    "filename": "id59_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id59",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id59_0002",
+    "relative_path": "real/CelebDF/id59_0002.mp4",
+    "filename": "id59_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id59",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id59_0003",
+    "relative_path": "real/CelebDF/id59_0003.mp4",
+    "filename": "id59_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id59",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id59_0004",
+    "relative_path": "real/CelebDF/id59_0004.mp4",
+    "filename": "id59_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id59",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id59_0005",
+    "relative_path": "real/CelebDF/id59_0005.mp4",
+    "filename": "id59_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id59",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id59_0006",
+    "relative_path": "real/CelebDF/id59_0006.mp4",
+    "filename": "id59_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id59",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id59_0007",
+    "relative_path": "real/CelebDF/id59_0007.mp4",
+    "filename": "id59_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id59",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id59_0008",
+    "relative_path": "real/CelebDF/id59_0008.mp4",
+    "filename": "id59_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id59",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id59_0009",
+    "relative_path": "real/CelebDF/id59_0009.mp4",
+    "filename": "id59_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id59",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id5_0000",
+    "relative_path": "real/CelebDF/id5_0000.mp4",
+    "filename": "id5_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id5",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id5_0001",
+    "relative_path": "real/CelebDF/id5_0001.mp4",
+    "filename": "id5_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id5",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id5_0002",
+    "relative_path": "real/CelebDF/id5_0002.mp4",
+    "filename": "id5_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id5",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id5_0003",
+    "relative_path": "real/CelebDF/id5_0003.mp4",
+    "filename": "id5_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id5",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id5_0004",
+    "relative_path": "real/CelebDF/id5_0004.mp4",
+    "filename": "id5_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id5",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id5_0005",
+    "relative_path": "real/CelebDF/id5_0005.mp4",
+    "filename": "id5_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id5",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id5_0006",
+    "relative_path": "real/CelebDF/id5_0006.mp4",
+    "filename": "id5_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id5",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id5_0007",
+    "relative_path": "real/CelebDF/id5_0007.mp4",
+    "filename": "id5_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id5",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id5_0008",
+    "relative_path": "real/CelebDF/id5_0008.mp4",
+    "filename": "id5_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id5",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id60_0000",
+    "relative_path": "real/CelebDF/id60_0000.mp4",
+    "filename": "id60_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id60",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id60_0002",
+    "relative_path": "real/CelebDF/id60_0002.mp4",
+    "filename": "id60_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id60",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id60_0003",
+    "relative_path": "real/CelebDF/id60_0003.mp4",
+    "filename": "id60_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id60",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id60_0004",
+    "relative_path": "real/CelebDF/id60_0004.mp4",
+    "filename": "id60_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id60",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id60_0005",
+    "relative_path": "real/CelebDF/id60_0005.mp4",
+    "filename": "id60_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id60",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id60_0006",
+    "relative_path": "real/CelebDF/id60_0006.mp4",
+    "filename": "id60_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id60",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id60_0007",
+    "relative_path": "real/CelebDF/id60_0007.mp4",
+    "filename": "id60_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id60",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id60_0008",
+    "relative_path": "real/CelebDF/id60_0008.mp4",
+    "filename": "id60_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id60",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id60_0009",
+    "relative_path": "real/CelebDF/id60_0009.mp4",
+    "filename": "id60_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id60",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id61_0000",
+    "relative_path": "real/CelebDF/id61_0000.mp4",
+    "filename": "id61_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id61",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id61_0001",
+    "relative_path": "real/CelebDF/id61_0001.mp4",
+    "filename": "id61_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id61",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id61_0002",
+    "relative_path": "real/CelebDF/id61_0002.mp4",
+    "filename": "id61_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id61",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id61_0003",
+    "relative_path": "real/CelebDF/id61_0003.mp4",
+    "filename": "id61_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id61",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id61_0004",
+    "relative_path": "real/CelebDF/id61_0004.mp4",
+    "filename": "id61_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id61",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id61_0005",
+    "relative_path": "real/CelebDF/id61_0005.mp4",
+    "filename": "id61_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id61",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id61_0006",
+    "relative_path": "real/CelebDF/id61_0006.mp4",
+    "filename": "id61_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id61",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id61_0007",
+    "relative_path": "real/CelebDF/id61_0007.mp4",
+    "filename": "id61_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id61",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id61_0008",
+    "relative_path": "real/CelebDF/id61_0008.mp4",
+    "filename": "id61_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id61",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id61_0009",
+    "relative_path": "real/CelebDF/id61_0009.mp4",
+    "filename": "id61_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id61",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id6_0000",
+    "relative_path": "real/CelebDF/id6_0000.mp4",
+    "filename": "id6_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id6",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id6_0001",
+    "relative_path": "real/CelebDF/id6_0001.mp4",
+    "filename": "id6_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id6",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id6_0002",
+    "relative_path": "real/CelebDF/id6_0002.mp4",
+    "filename": "id6_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id6",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id6_0003",
+    "relative_path": "real/CelebDF/id6_0003.mp4",
+    "filename": "id6_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id6",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id6_0004",
+    "relative_path": "real/CelebDF/id6_0004.mp4",
+    "filename": "id6_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id6",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id6_0005",
+    "relative_path": "real/CelebDF/id6_0005.mp4",
+    "filename": "id6_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id6",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id6_0006",
+    "relative_path": "real/CelebDF/id6_0006.mp4",
+    "filename": "id6_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id6",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id6_0007",
+    "relative_path": "real/CelebDF/id6_0007.mp4",
+    "filename": "id6_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id6",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id6_0008",
+    "relative_path": "real/CelebDF/id6_0008.mp4",
+    "filename": "id6_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id6",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id6_0009",
+    "relative_path": "real/CelebDF/id6_0009.mp4",
+    "filename": "id6_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id6",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id7_0000",
+    "relative_path": "real/CelebDF/id7_0000.mp4",
+    "filename": "id7_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id7",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id7_0001",
+    "relative_path": "real/CelebDF/id7_0001.mp4",
+    "filename": "id7_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id7",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id7_0002",
+    "relative_path": "real/CelebDF/id7_0002.mp4",
+    "filename": "id7_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id7",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id7_0003",
+    "relative_path": "real/CelebDF/id7_0003.mp4",
+    "filename": "id7_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id7",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id7_0004",
+    "relative_path": "real/CelebDF/id7_0004.mp4",
+    "filename": "id7_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id7",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id7_0007",
+    "relative_path": "real/CelebDF/id7_0007.mp4",
+    "filename": "id7_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id7",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id7_0008",
+    "relative_path": "real/CelebDF/id7_0008.mp4",
+    "filename": "id7_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id7",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id7_0009",
+    "relative_path": "real/CelebDF/id7_0009.mp4",
+    "filename": "id7_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id7",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id8_0000",
+    "relative_path": "real/CelebDF/id8_0000.mp4",
+    "filename": "id8_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id8",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id8_0001",
+    "relative_path": "real/CelebDF/id8_0001.mp4",
+    "filename": "id8_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id8",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id8_0002",
+    "relative_path": "real/CelebDF/id8_0002.mp4",
+    "filename": "id8_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id8",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id8_0003",
+    "relative_path": "real/CelebDF/id8_0003.mp4",
+    "filename": "id8_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id8",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id8_0004",
+    "relative_path": "real/CelebDF/id8_0004.mp4",
+    "filename": "id8_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id8",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id8_0006",
+    "relative_path": "real/CelebDF/id8_0006.mp4",
+    "filename": "id8_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id8",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id8_0007",
+    "relative_path": "real/CelebDF/id8_0007.mp4",
+    "filename": "id8_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id8",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id8_0008",
+    "relative_path": "real/CelebDF/id8_0008.mp4",
+    "filename": "id8_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id8",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id8_0009",
+    "relative_path": "real/CelebDF/id8_0009.mp4",
+    "filename": "id8_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id8",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id9_0000",
+    "relative_path": "real/CelebDF/id9_0000.mp4",
+    "filename": "id9_0000.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id9",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id9_0001",
+    "relative_path": "real/CelebDF/id9_0001.mp4",
+    "filename": "id9_0001.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id9",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id9_0002",
+    "relative_path": "real/CelebDF/id9_0002.mp4",
+    "filename": "id9_0002.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id9",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id9_0003",
+    "relative_path": "real/CelebDF/id9_0003.mp4",
+    "filename": "id9_0003.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id9",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id9_0004",
+    "relative_path": "real/CelebDF/id9_0004.mp4",
+    "filename": "id9_0004.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id9",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id9_0005",
+    "relative_path": "real/CelebDF/id9_0005.mp4",
+    "filename": "id9_0005.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id9",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id9_0006",
+    "relative_path": "real/CelebDF/id9_0006.mp4",
+    "filename": "id9_0006.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id9",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id9_0007",
+    "relative_path": "real/CelebDF/id9_0007.mp4",
+    "filename": "id9_0007.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id9",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id9_0008",
+    "relative_path": "real/CelebDF/id9_0008.mp4",
+    "filename": "id9_0008.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id9",
+    "metadata": {}
+  },
+  {
+    "video_id": "real_CelebDF_id9_0009",
+    "relative_path": "real/CelebDF/id9_0009.mp4",
+    "filename": "id9_0009.mp4",
+    "label": 0,
+    "label_name": "real",
+    "category": "real",
+    "generator": "CelebDF",
+    "split_group": "real_subject_id9",
+    "metadata": {}
+  }
+]

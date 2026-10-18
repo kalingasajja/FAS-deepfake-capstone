@@ -1,7 +1,146 @@
-# Robust Face Liveness & Deepfake Detection for Attendance Systems
-## Literature Review Outline & System Scoping Document
+# Unified Face Authenticity Detection: Common Dataset & Fusion Pipeline
+
+Capstone Project: **“Unified Face Authenticity Detection Against Physical and Digital Attacks”**  
+**Role:** Dataset Pipeline & Multimodal Fusion Lead
 
 ---
+
+## 1. Architecture Overview
+
+```
+                      Input Portrait Video (.mp4)
+                                  │
+         ┌────────────────────────┼────────────────────────┐
+         ▼                        ▼                        ▼
+  Member 1: Spatial      Member 2: Frequency        Member 3: rPPG
+  SigLIP / ViT-Base      2D FFT / DCT Spectra      pyVHR / POS / LSTM
+  (Visual Artifacts)     (Frequency Forgeries)     (Physiological BVP)
+         │                        │                        │
+  p_spatial in [0,1]     p_frequency in [0,1]      p_rppg in [0,1]
+         └────────────────────────┬────────────────────────┘
+                                  ▼
+                        Your Role: Fusion Layer
+         Stage 1: Calibrated Late Fusion (w_s p_s + w_f p_f + w_r p_r)
+         Stage 2: Gated Multimodal Unit (GMU) / Cross-Attention
+                                  ▼
+                   Final Authenticity Prediction
+```
+
+---
+
+## 2. Dataset Strategy & Leakage Safety
+
+We use the **Netherlands Forensic Institute (NFI)** rPPG Deepfake Detection dataset ([Hugging Face](https://huggingface.co/datasets/NetherlandsForensicInstitute/rppg-deepfake-detection)):
+* **Total Videos:** 492 clips (~1.88 GB).
+* **Real Videos (280 clips):** Celeb-DF v2 portrait videos spanning **31 distinct subject identities** (`id0` to `id61`).
+* **Face-Swap Deepfakes (85 clips):** Akool AI, Deepfaker, FaceSwapper, Kaggle, Reface AI.
+* **Fully Synthetic Videos (127 clips):** OpenAI Sora, Kling AI, Luma Dream Machine, Pika, PixVerse, Runway Gen-2/3.
+* **Confounder Metadata:** Annotated in `annotations.json` for `lighting` (`well-lit` vs `bad`) and `head_movement` (`yes` vs `no`).
+
+### Leakage-Safe Partitioning Rules
+To prevent artificial performance inflation across splits:
+1. **Real Videos (`real/CelebDF/`):** Clustered by `subject_id` (`id0`, `id1`...). No celebrity appears across both Train and Test.
+2. **Face-Swaps (`fake/*_FS/`):** Clustered by base target video ID (`001`, `009`...). No target scene/torso leaks into Test.
+3. **Synthetic Videos (`fake/*_SYN/`):** Clustered by prompt index (`prompt_1`..`prompt_20`). Identical generation prompts do not cross splits.
+
+---
+
+## 3. Directory Layout
+
+```
+deepfake-proj/
+├── data/
+│   ├── master_manifest.json          # Master catalog of all 492 videos with metadata
+│   ├── splits.json                   # 70% Train / 15% Val / 15% Test (leakage-safe)
+│   ├── locked_splits.json            # Immutable frozen copy for project reproducibility
+│   ├── splits_logo.json              # Leave-One-Generator-Out splits for generalization
+│   ├── manifests/
+│   │   ├── spatial_manifest.json     # For Member 1 (Spatial)
+│   │   ├── frequency_manifest.json   # For Member 2 (Frequency)
+│   │   └── rppg_manifest.json        # For Member 3 (rPPG)
+│   └── predictions/                  # Where teammates drop their prediction files
+├── scripts/
+│   ├── build_dataset_manifest.py     # Generates master_manifest.json from HF / local directory
+│   ├── create_splits.py              # Generates leakage-safe splits and branch manifests
+│   └── generate_mock_predictions.py  # Generates mock branch predictions for fast testing
+├── fusion/
+│   ├── contract.py                   # Validates and merges branch predictions
+│   ├── baseline_fusion.py            # Late score fusion (w_s p_s + w_f p_f + w_r p_r) + ablation
+│   ├── learned_fusion.py             # ScoreMLP, Gated Multimodal Unit, Cross-Attention
+│   └── evaluate.py                   # Accuracy, F1, AUC, per-generator & stress-test reports
+└── run_fusion_pipeline.py            # Orchestrator to run the entire evaluation
+```
+
+---
+
+## 4. Teammate Output Data Contract
+
+Each teammate exports their branch predictions as a JSON or CSV file to `data/predictions/`:
+
+### Expected JSON Schema (`data/predictions/<branch>_test_preds.json`)
+```json
+{
+  "branch": "spatial",
+  "predictions": [
+    {
+      "video_id": "real_CelebDF_id0_0000",
+      "score": 0.082,
+      "feature_vector": [0.12, -0.45, 0.89]
+    },
+    {
+      "video_id": "synthetic_Sora_1",
+      "score": 0.941,
+      "feature_vector": [0.78, 0.23, -0.11]
+    }
+  ]
+}
+```
+
+* `score`: Must be a continuous float in `[0.0, 1.0]`, representing the predicted probability that the video is **FAKE**.
+* `feature_vector` (Optional): 1D array of intermediate embeddings for feature-level fusion.
+
+---
+
+## 5. Quickstart & Workflow
+
+### Step 1: Generate Master Manifest & Frozen Splits
+```bash
+# Build master manifest from Hugging Face or local path
+python scripts/build_dataset_manifest.py
+
+# Generate deterministic, leakage-safe splits
+python scripts/create_splits.py --seed 42
+```
+
+### Step 2: Test Fusion with Simulated Predictions
+```bash
+# Generate simulated predictions (includes simulated rPPG degradation under bad lighting)
+python scripts/generate_mock_predictions.py
+
+# Run complete late-fusion optimization and ablation reporting
+python run_fusion_pipeline.py
+```
+
+### Step 3: Integrate Real Teammate Predictions
+Once Member 1, 2, and 3 produce their test predictions:
+```bash
+python run_fusion_pipeline.py \
+  --spatial-preds data/predictions/spatial_test_preds.json \
+  --frequency-preds data/predictions/frequency_test_preds.json \
+  --rppg-preds data/predictions/rppg_test_preds.json \
+  --output-dir results/
+```
+
+Outputs generated in `results/`:
+1. `aligned_predictions.csv`: Unified ground-truth + multi-branch score matrix.
+2. `ablation_results.csv`: Individual branch metrics vs 2-branch and 3-branch fused performance.
+3. `per_generator_results.csv`: Detection accuracy across all 11 generative models (Akool, Sora, Kling, Runway, etc.).
+4. `stress_test_results.csv`: Robustness evaluation under low light and high motion.
+
+---
+---
+
+# Literature Review & System Scoping
 
 ## 1. Problem Statement
 
@@ -134,102 +273,18 @@ This is the closest existing work to combining spatial-artifact detection with p
 - **MFLD-RSTF** (Yadav et al., 2024) — a related multimodal architecture (not pure ViT, but conceptually the same fusion idea) combining rPPG with deep spatio-temporal features, validated on NUAA/SiW/Replay-Attack with reported improvements over prior methods in both intra- and cross-database testing.
 - **The Yu et al. joint benchmark paper (arXiv:2208.05401)** you already have in your list explicitly calls this fusion direction out as future work: exploring more advanced multi-task learning and multi-modal fusion strategies, and exploiting semantic facial motion cues and contextual dynamic artifacts alongside rPPG for joint spoofing and forgery detection — i.e., a transformer-based spatial+rPPG+forgery-artifact joint model is an **explicitly identified open gap**, not something already solved.
 
-**Why this matters for your proposal:** None of the existing ViT+rPPG work (TransRPPG, Deep Guard, MFLD-RSTF) is evaluated against **deepfake/forgery attacks** — they're all pure presentation-attack (PAD) papers. Combining (a) a ViT/Swin spatial-artifact branch, (b) an rPPG physiological branch, and (c) training/evaluation across *both* physical PAs and digital deepfakes in one unified benchmark would sit at the intersection of three separate research threads that currently don't overlap — a legitimate, citable gap for your contribution statement.
-
 ---
 
 ## 8. Proposed Contributions
 
-This section translates the identified research gaps (Sections 2, 7, 7a) into a concrete set of contributions for the proposal/thesis. Nothing here is a single existing paper — each item closes a specific, citable gap identified across the FAS survey, the joint-benchmark paper, and the ViT literature.
-
 ### 8.1 Architecture-level contribution
 <img width="2720" height="2560" alt="unified_liveness_deepfake_architecture" src="https://github.com/user-attachments/assets/1944b0ee-938f-468c-b980-09ca8fcfc694" />
-
 
 **Core proposal: a three-branch fusion transformer, trained and evaluated jointly on physical presentation attacks and digital deepfakes.**
 
 - **Spatial branch** — CLIP-pretrained ViT (per FLIP's finding that vision-language pretraining generalizes better than plain ImageNet pretraining). Catches blending artifacts, print/screen texture, moiré.
 - **Frequency branch** — FFT/DCT feature extraction (per M2TR). Catches GAN upsampling artifacts and screen-replay banding invisible in the spatial domain.
 - **Physiological branch** — an rPPG transformer using multi-scale spatial-temporal maps (per TransRPPG). Catches absence of pulse in masks/photos/screens.
-
-**What is actually novel:** no existing paper fuses all three branches into one model trained across *both* attack families simultaneously — each existing paper (TransRPPG, Deep Guard, M2TR, FLIP) covers at most two of these three elements. The three-way fusion, applied to a joint physical+digital label space, is the architectural contribution.
-
-**Fusion mechanism:** combine the weighted batch/layer normalization strategy from the Yu et al. joint benchmark paper (arXiv:2208.05401) — to prevent one modality from dominating — with the cross-modal contrastive alignment idea from FLIP (arXiv:2309.16649), aligning modalities in a shared embedding space rather than naive feature concatenation.
-
-### 8.2 Training-strategy contributions
-
-- **Joint multi-task labeling.** Replace binary live/spoof supervision with a 3-way (or richer) label space — live / physical-attack / digital-attack — so the model learns *what specifically* is wrong rather than only *that* something is wrong. Directly addresses the "arbitrary, unfaithful spoof cue" problem identified in the Yu et al. TPAMI survey.
-- **Domain generalization by construction.** Bake in meta-learning (query/support domain splits) or explicit feature disentanglement from the outset rather than treating generalization as a post-hoc evaluation concern — every survey reviewed identifies this as the field's largest unsolved problem.
-- **Addressing the physical/digital data imbalance.** Deepfakes are cheap to generate at scale; physical presentation attacks are expensive to collect — a gap the Yu et al. survey explicitly flags as harmful to multi-task representation learning. Proposed fix: a generative simulation module (in the spirit of "Joint Physical-Digital Facial Attack Detection via Simulating Spoofing Clues") to synthetically balance classes rather than naive upsampling/downsampling.
-
-### 8.3 Framework-level deliverables (things that need to be built, not just designed)
-
-| Component | Why it doesn't exist yet | What to build |
-|---|---|---|
-| Unified benchmark dataset | Existing joint benchmarks (Yu et al., 2022) exclude real-time virtual-camera injection attacks | Merge OULU-NPU / CelebA-Spoof / SiW-M (physical) with FaceForensics++ / Celeb-DF (digital), plus a newly captured set of virtual-camera-injection samples |
-| Attendance-specific evaluation protocol | No FAS benchmark simulates a queue-based, low-latency, variable-hardware attendance scenario | New protocol: cross-device, cross-lighting, sub-2-second inference budget, plus an "unknown attack" holdout split |
-| Lightweight/mobile variant | ViT-based methods are too heavy for real-time queues (ViTranZFAS: 85.8M params) | Knowledge-distill the three-branch model into a compact student network (TransRPPG-scale: <1M params) for deployment |
-| Interpretability output | Nearly every FAS survey reviewed flags explainability as missing | Spoof-region localization map via a multi-task auxiliary head on the same model (see Section 8.3.1) — not a separate network — so a human reviewer can see *why* a face was flagged, important for attendance systems where false rejections need manual review |
-
-#### 8.3.1 Spoof localization as a multi-task auxiliary head (not a second model)
-
-Spoof localization should be implemented as an **auxiliary output head on the same shared backbone**, not as a separately trained model. This is both cheaper and, per the pixel-wise supervision literature, actively improves the primary classifier rather than merely adding an explainability side-output.
-
-**Why one model, not two:**
-- Pixel-wise/mask supervision is a training signal, not a downstream task — the same backbone features used for classification can simultaneously drive a small localization decoder in a single forward pass. This is how George & Marcel's cascaded confidence-map approach, CDCN/pyramid-supervision depth-map decoders, and Swin-Y-Net's segmentation-then-classification design all work.
-- The localization signal acts as a **regularizer**: forcing the model to explain *where* the spoof is prevents it from latching onto unfaithful shortcut patterns (e.g., screen bezel) that plain binary-loss training is prone to.
-- A shared representation means classification and localization share the same generalization behavior — training two separate models would require validating two independent generalization gaps that might disagree on ambiguous cases.
-- The added inference cost is small (a lightweight conv/deconv decoder on top of the existing backbone), which matters given the edge-deployment latency constraints already identified for this project.
-
-**Proposed architecture:**
-
-```
-Input face crop
-      │
-Shared backbone (three-branch fusion, per Section 8.1)
-      │
-      ├──> Localization head (small conv/deconv decoder) → binary spoof mask / depth map
-      │
-      └──> Classification head (pooling + FC) → live / physical-attack / digital-attack
-```
-
-**Combined training objective:**
-
-```
-L_total = λ1 · L_classification + λ2 · L_localization
-```
-
-where `L_localization` is a pixel-wise binary cross-entropy (for mask supervision) or L1/L2 loss (for depth supervision) against ground-truth, and `λ1`/`λ2` balance the two objectives.
-
-**Binary mask vs. depth map — recommendation:** favor binary mask supervision over depth-map supervision as the default for this project. Depth maps are more physically intuitive but fail on inherently 3D attacks (3D masks, mannequins, since these have genuine facial depth indistinguishable from a live face) and are costly to generate accurate ground truth for. Binary masks are cheaper to generate, generalize across more attack types, and can be extended to ternary labels (real / spoofed / uncertain background) to better handle partial attacks such as a phone screen only covering part of the frame — the most likely real-world case for this project's attendance-fraud scenario. If 3D mask attacks are in-scope, pair localization with the rPPG branch rather than relying on depth-based localization alone, since masks lack a pulse signal that depth maps cannot capture.
-
-**Known limitations to scope explicitly (not oversell in the proposal):**
-- Localization quality tracks the same generalization problem as detection accuracy — on unseen attack types (e.g., partial print, half-mask), predictions become chaotic and regions beyond the actual spoof medium get incorrectly flagged.
-- Naive pixel-wise supervision treats all patches with equal weight, which biases the model since subtle clues like moiré patterns vary in intensity across regions — mitigate with a learnable attention module before computing the localization loss, rather than plain unweighted pixel-wise loss.
-
-**Label-generation work required (this is the real added effort, not a second model):**
-- Physical attacks: binary masks can often be derived heuristically (e.g., whole-face-region "spoof" label for print/replay) or via a pseudo-depth generator applied only to genuine faces, with spoof samples assigned a flat/zero depth map.
-- Digital attacks (deepfakes): if generating your own manipulated samples, masks come for free from knowing which pixels were blended/swapped; if using existing deepfake datasets, approximate via face-parsing plus the known manipulation region.
-
-### 8.4 Concrete improvements over specific prior work
-
-- **Over TransRPPG:** add spatial and frequency branches it lacks, so the model is no longer blind to attacks with no exploitable pulse signal (e.g., a real photo of a living person, which also lacks a depth cue).
-- **Over Deep Guard (Swin + rPPG):** extend from presentation-attack-only to joint PA + deepfake detection, and replace plain feature concatenation with domain-generalization-aware fusion training.
-- **Over FLIP:** FLIP is spatial-only; add the physiological and frequency branches, and extend its language-guided contrastive supervision to describe *attack type* ("a photo of a screen replay attack" vs. "a photo of a face-swap deepfake") rather than only live/spoof — a richer supervision signal using the same underlying mechanism.
-- **Over M2TR:** M2TR has no physiological branch and is not evaluated against physical presentation attacks at all; extending it into the three-branch design directly closes that gap.
-
-### 8.5 Systems-level contributions
-
-- **Adaptive branch weighting at inference.** Skip the rPPG branch (which needs several seconds of video) when latency is tight, falling back to spatial+frequency only — a runtime-adaptive design that no reviewed paper addresses, since none are built for latency-constrained deployment.
-- **Federated/privacy-preserving training pipeline**, relevant if attendance data is sensitive: each site/department trains locally and aggregates centrally without sharing raw biometric data, per the privacy-preserving training direction flagged in the Yu et al. TPAMI survey.
-- **Continual/few-shot update mechanism** so the model can absorb a newly discovered attack type (e.g., a new deepfake tool) without full retraining, using the meta-learning approach from zero/few-shot FAS literature (Qin et al. and related work).
-
-### 8.6 Suggested prioritization / roadmap
-
-1. **Phase 1 (proof of concept):** spatial + frequency two-branch fusion, trained jointly on merged physical + digital attack datasets. This alone is a legitimate, publishable contribution, since no existing work performs joint training at this scope.
-2. **Phase 2:** add the rPPG branch and cross-modal fusion — the most novel piece of the proposed architecture.
-3. **Phase 3:** domain generalization and distillation, to make the model deployment-feasible under the attendance-system latency/hardware constraints from Section 5.
-4. **Stretch goal:** virtual-camera-injection attack collection and evaluation — the hardest, most under-studied threat class identified in Section 2; reasonable to present as a partially-solved future-work chapter even if not fully addressed in v1.
 
 ---
 
@@ -242,27 +297,7 @@ where `L_localization` is a pixel-wise binary cross-entropy (for mask supervisio
 5. Yu, Cai, Li, Yang, Shi, Kot, "Benchmarking Joint Face Spoofing and Forgery Detection with Visual and Physiological Cues," IEEE TDSC 2024 (arXiv:2208.05401).
 6. "Unified Physical-Digital Attack Detection Challenge," CVPR 2024.
 7. "Paired-Sampling Contrastive Framework for Joint Physical-Digital Face Attack Detection," arXiv:2508.14980, 2025.
-8. Mixture-of-Experts unified physical/digital face attack detection paper, 2024.
-9. TransRPPG: "Remote Photoplethysmography Transformer for 3D Mask Face Presentation Attack Detection," IEEE SPL 2021.
-10. "Oulu Remote-photoplethysmography Presentation Attacks Database (OR-PAD)," IJCV 2025.
-11. Liu et al., CNN-RNN rPPG + depth-map estimation for face anti-spoofing, CVPR 2018.
-12. "Generalized Face Liveness Detection via De-fake Face Generator," arXiv:2401.09006.
-13. "A Compact Deep Learning Model for Face Spoofing Detection," arXiv:2101.04756.
-14. George & Marcel, "On the Effectiveness of Vision Transformers for Zero-shot Face Anti-Spoofing," IJCB 2021 (arXiv:2011.08019).
-15. Srivatsan, Naseer, Nandakumar, "FLIP: Cross-domain Face Anti-spoofing with Language Guidance," ICCV 2023 (arXiv:2309.16649).
-16. Yu et al., "Rethinking Vision Transformer and Masked Autoencoder in Multimodal Face Anti-spoofing," arXiv:2302.05744.
-17. Liu et al., "FM-ViT: Flexible Modal Vision Transformers for Face Anti-Spoofing," IEEE TIFS, 2023.
-18. Wang et al., "M2TR: Multi-modal Multi-scale Transformers for Deepfake Detection," ICMR 2022 (arXiv:2104.09770).
-19. Yu, Li, Wang, Zhao, "TransRPPG: Remote Photoplethysmography Transformer for 3D Mask Face Presentation Attack Detection," IEEE SPL 2021 (arXiv:2104.07419).
-20. "Face Spoofing Detection using Swin Transformer and rPPG Signal" ("Deep Guard"), IJRASET, 2025.
-21. Yadav et al., "MFLD-RSTF: Multimodal Face Anti-spoofing with rPPG and Deep Spatio-temporal Features," SIGMAA 2024 (Springer).
-
-
----
-
-## 10. Immediate Next Steps
-
-1. Read the Yu et al. joint benchmark paper in full — it is your closest prior work and its related-work section is itself a mini literature review you can mine for further citations.
-2. Lock in the four scoping decisions in Section 5 — they determine the rest of your review's boundaries.
-3. Build the comparison table in Section 4 as you read, rather than after — it becomes both your review's evidence table and your future baseline list.
-4. Identify 2–3 candidate public datasets that combine or can be merged to cover both PA and deepfake attacks (e.g., OULU-NPU/CelebA-Spoof + FaceForensics++) for your own experiments.
+8. TransRPPG: "Remote Photoplethysmography Transformer for 3D Mask Face Presentation Attack Detection," IEEE SPL 2021.
+9. "Oulu Remote-photoplethysmography Presentation Attacks Database (OR-PAD)," IJCV 2025.
+10. Srivatsan, Naseer, Nandakumar, "FLIP: Cross-domain Face Anti-spoofing with Language Guidance," ICCV 2023 (arXiv:2309.16649).
+11. Wang et al., "M2TR: Multi-modal Multi-scale Transformers for Deepfake Detection," ICMR 2022 (arXiv:2104.09770).
