@@ -1,0 +1,354 @@
+{
+  "branch": "rppg",
+  "split": "val",
+  "predictions": [
+    {
+      "video_id": "face_swap_AkoolAI_017_AkoolAI_fa005",
+      "score": 0.5146
+    },
+    {
+      "video_id": "face_swap_Deepfaker_017_Deepfaker_fa005",
+      "score": 0.4832
+    },
+    {
+      "video_id": "face_swap_Deepfaker_033_Deepfaker_fa008",
+      "score": 0.5943
+    },
+    {
+      "video_id": "face_swap_Deepfaker_035_Deepfaker_fa022",
+      "score": 0.4832
+    },
+    {
+      "video_id": "face_swap_Faceswapper_017_Faceswapper_fa005",
+      "score": 0.4006
+    },
+    {
+      "video_id": "face_swap_Faceswapper_033_Faceswapper_fa008",
+      "score": 0.4839
+    },
+    {
+      "video_id": "face_swap_Faceswapper_035_Faceswapper_fa022",
+      "score": 0.5427
+    },
+    {
+      "video_id": "face_swap_Kaggle_017_Kaggle_fa005",
+      "score": 0.4074
+    },
+    {
+      "video_id": "face_swap_Kaggle_033_Kaggle_fa008",
+      "score": 0.4881
+    },
+    {
+      "video_id": "face_swap_Kaggle_035_Kaggle_fa022",
+      "score": 0.5981
+    },
+    {
+      "video_id": "face_swap_RefaceAI_017_RefaceAI_fa005",
+      "score": 0.4379
+    },
+    {
+      "video_id": "face_swap_RefaceAI_033_RefaceAI_fa008",
+      "score": 0.6776
+    },
+    {
+      "video_id": "face_swap_RefaceAI_035_RefaceAI_fa022",
+      "score": 0.6133
+    },
+    {
+      "video_id": "real_CelebDF_id21_0000",
+      "score": 0.4056
+    },
+    {
+      "video_id": "real_CelebDF_id21_0001",
+      "score": 0.3805
+    },
+    {
+      "video_id": "real_CelebDF_id21_0002",
+      "score": 0.2918
+    },
+    {
+      "video_id": "real_CelebDF_id21_0003",
+      "score": 0.4422
+    },
+    {
+      "video_id": "real_CelebDF_id21_0004",
+      "score": 0.581
+    },
+    {
+      "video_id": "real_CelebDF_id21_0005",
+      "score": 0.587
+    },
+    {
+      "video_id": "real_CelebDF_id21_0006",
+      "score": 0.5209
+    },
+    {
+      "video_id": "real_CelebDF_id21_0007",
+      "score": 0.4755
+    },
+    {
+      "video_id": "real_CelebDF_id21_0008",
+      "score": 0.4243
+    },
+    {
+      "video_id": "real_CelebDF_id21_0009",
+      "score": 0.3055
+    },
+    {
+      "video_id": "real_CelebDF_id3_0000",
+      "score": 0.4484
+    },
+    {
+      "video_id": "real_CelebDF_id3_0001",
+      "score": 0.3805
+    },
+    {
+      "video_id": "real_CelebDF_id3_0002",
+      "score": 0.3699
+    },
+    {
+      "video_id": "real_CelebDF_id3_0003",
+      "score": 0.4108
+    },
+    {
+      "video_id": "real_CelebDF_id3_0004",
+      "score": 0.6148
+    },
+    {
+      "video_id": "real_CelebDF_id3_0005",
+      "score": 0.5256
+    },
+    {
+      "video_id": "real_CelebDF_id3_0006",
+      "score": 0.433
+    },
+    {
+      "video_id": "real_CelebDF_id3_0007",
+      "score": 0.4331
+    },
+    {
+      "video_id": "real_CelebDF_id3_0008",
+      "score": 0.5639
+    },
+    {
+      "video_id": "real_CelebDF_id3_0009",
+      "score": 0.4722
+    },
+    {
+      "video_id": "real_CelebDF_id41_0000",
+      "score": 0.3383
+    },
+    {
+      "video_id": "real_CelebDF_id41_0001",
+      "score": 0.5046
+    },
+    {
+      "video_id": "real_CelebDF_id41_0002",
+      "score": 0.3968
+    },
+    {
+      "video_id": "real_CelebDF_id41_0003",
+      "score": 0.5563
+    },
+    {
+      "video_id": "real_CelebDF_id41_0004",
+      "score": 0.6115
+    },
+    {
+      "video_id": "real_CelebDF_id41_0005",
+      "score": 0.4776
+    },
+    {
+      "video_id": "real_CelebDF_id41_0006",
+      "score": 0.4316
+    },
+    {
+      "video_id": "real_CelebDF_id41_0007",
+      "score": 0.3858
+    },
+    {
+      "video_id": "real_CelebDF_id41_0008",
+      "score": 0.4053
+    },
+    {
+      "video_id": "real_CelebDF_id41_0009",
+      "score": 0.4061
+    },
+    {
+      "video_id": "real_CelebDF_id43_0000",
+      "score": 0.6084
+    },
+    {
+      "video_id": "real_CelebDF_id43_0001",
+      "score": 0.2903
+    },
+    {
+      "video_id": "real_CelebDF_id43_0002",
+      "score": 0.4047
+    },
+    {
+      "video_id": "real_CelebDF_id43_0003",
+      "score": 0.4204
+    },
+    {
+      "video_id": "real_CelebDF_id43_0004",
+      "score": 0.4285
+    },
+    {
+      "video_id": "real_CelebDF_id43_0005",
+      "score": 0.5698
+    },
+    {
+      "video_id": "real_CelebDF_id43_0006",
+      "score": 0.3228
+    },
+    {
+      "video_id": "real_CelebDF_id43_0007",
+      "score": 0.4309
+    },
+    {
+      "video_id": "real_CelebDF_id43_0008",
+      "score": 0.3903
+    },
+    {
+      "video_id": "real_CelebDF_id43_0009",
+      "score": 0.3986
+    },
+    {
+      "video_id": "real_CelebDF_id48_0000",
+      "score": 0.4186
+    },
+    {
+      "video_id": "real_CelebDF_id48_0001",
+      "score": 0.3256
+    },
+    {
+      "video_id": "real_CelebDF_id48_0002",
+      "score": 0.4114
+    },
+    {
+      "video_id": "real_CelebDF_id48_0003",
+      "score": 0.414
+    },
+    {
+      "video_id": "real_CelebDF_id48_0004",
+      "score": 0.4017
+    },
+    {
+      "video_id": "real_CelebDF_id48_0005",
+      "score": 0.4104
+    },
+    {
+      "video_id": "real_CelebDF_id48_0006",
+      "score": 0.5229
+    },
+    {
+      "video_id": "real_CelebDF_id48_0007",
+      "score": 0.4762
+    },
+    {
+      "video_id": "real_CelebDF_id48_0008",
+      "score": 0.5984
+    },
+    {
+      "video_id": "real_CelebDF_id48_0009",
+      "score": 0.3215
+    },
+    {
+      "video_id": "synthetic_KlingAI_10",
+      "score": 0.4462
+    },
+    {
+      "video_id": "synthetic_KlingAI_12",
+      "score": 0.6561
+    },
+    {
+      "video_id": "synthetic_KlingAI_14",
+      "score": 0.4256
+    },
+    {
+      "video_id": "synthetic_KlingAI_18",
+      "score": 0.6763
+    },
+    {
+      "video_id": "synthetic_Luma_deepfake10",
+      "score": 0.5883
+    },
+    {
+      "video_id": "synthetic_Luma_deepfake12",
+      "score": 0.6754
+    },
+    {
+      "video_id": "synthetic_Luma_deepfake14",
+      "score": 0.4579
+    },
+    {
+      "video_id": "synthetic_Luma_deepfake18",
+      "score": 0.4312
+    },
+    {
+      "video_id": "synthetic_Pika_10",
+      "score": 0.5363
+    },
+    {
+      "video_id": "synthetic_Pika_12",
+      "score": 0.5786
+    },
+    {
+      "video_id": "synthetic_Pika_14",
+      "score": 0.4156
+    },
+    {
+      "video_id": "synthetic_Pika_18",
+      "score": 0.4328
+    },
+    {
+      "video_id": "synthetic_PixVerse_10",
+      "score": 0.6086
+    },
+    {
+      "video_id": "synthetic_PixVerse_12",
+      "score": 0.4172
+    },
+    {
+      "video_id": "synthetic_PixVerse_14",
+      "score": 0.4371
+    },
+    {
+      "video_id": "synthetic_PixVerse_18",
+      "score": 0.4371
+    },
+    {
+      "video_id": "synthetic_Runway_10",
+      "score": 0.4793
+    },
+    {
+      "video_id": "synthetic_Runway_12",
+      "score": 0.6838
+    },
+    {
+      "video_id": "synthetic_Runway_14",
+      "score": 0.6279
+    },
+    {
+      "video_id": "synthetic_Runway_18",
+      "score": 0.3274
+    },
+    {
+      "video_id": "synthetic_Sora_10",
+      "score": 0.6131
+    },
+    {
+      "video_id": "synthetic_Sora_12",
+      "score": 0.6237
+    },
+    {
+      "video_id": "synthetic_Sora_14",
+      "score": 0.6654
+    },
+    {
+      "video_id": "synthetic_Sora_18",
+      "score": 0.5172
+    }
+  ]
+}
