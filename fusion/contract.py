@@ -42,10 +42,14 @@ def validate_branch_file(file_path: str, expected_branch: Optional[str] = None) 
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
         if isinstance(data, dict):
-            branch_name = data.get("branch", "unknown")
-            if expected_branch and branch_name != expected_branch:
-                print(f"[WARN] Expected branch '{expected_branch}', found '{branch_name}' in {file_path}")
-            records = data.get("predictions", [])
+            if "predictions" in data:
+                branch_name = data.get("branch", "unknown")
+                if expected_branch and branch_name != expected_branch:
+                    print(f"[WARN] Expected branch '{expected_branch}', found '{branch_name}' in {file_path}")
+                records = data.get("predictions", [])
+            else:
+                # Direct map of {video_id: score}
+                records = [{"video_id": k, "score": float(v)} for k, v in data.items()]
         elif isinstance(data, list):
             records = data
     elif file_path.endswith(".csv"):

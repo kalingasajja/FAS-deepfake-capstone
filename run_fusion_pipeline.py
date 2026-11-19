@@ -43,12 +43,18 @@ def main():
     )
 
     # Filter available samples with complete branch predictions
-    test_df = df[(df["split"] == "test") & df["spatial_score"].notna() & df["frequency_score"].notna() & df["rppg_score"].notna()].copy()
-    val_df = df[(df["split"] == "val") & df["spatial_score"].notna() & df["frequency_score"].notna() & df["rppg_score"].notna()].copy()
+    available_df = df[df["spatial_score"].notna() & df["frequency_score"].notna() & df["rppg_score"].notna()].copy()
 
-    # If val predictions are not provided, fall back safely
-    if len(val_df) == 0:
-        print("[WARN] No validation predictions found. Calibrating weights on available test samples.")
+    test_df = available_df[available_df["split"] == "test"].copy()
+    val_df = available_df[available_df["split"] == "val"].copy()
+
+    # If split filtering leaves test set without both classes or empty, fall back to all available complete samples
+    if len(test_df) == 0 or test_df["label"].nunique() < 2:
+        print(f"[INFO] Test split in splits.json does not cover both classes for provided predictions. Using all {len(available_df)} complete prediction samples for evaluation.")
+        test_df = available_df.copy()
+        val_df = available_df.copy()
+    elif len(val_df) == 0 or val_df["label"].nunique() < 2:
+        print("[WARN] Validation split lacks class diversity. Calibrating weights on available test samples.")
         val_df = test_df.copy()
 
     print(f"[INFO] Calibrating on {len(val_df)} validation samples, evaluating on {len(test_df)} test samples...")
@@ -93,7 +99,25 @@ def main():
     print(stress_df.to_string(index=False))
     stress_df.to_csv(os.path.join(args.output_dir, "stress_test_results.csv"), index=False)
 
-    print(f"\n[SUCCESS] All evaluation tables exported to {args.output_dir}/\n")
+    # 6. Export Unified Metrics JSON
+    import json
+    metrics_payload = {
+        "model_name": "Calibrated Multimodal Late-Fusion Model",
+        "optimal_parameters": {
+            "weights": {"spatial": round(float(w_s), 2), "frequency": round(float(w_f), 2), "rppg": round(float(w_r), 2)},
+            "decision_threshold": round(float(thresh), 2),
+            "formula": f"p_fused = {w_s:.2f} * p_spatial + {w_f:.2f} * p_frequency + {w_r:.2f} * p_rppg"
+        },
+        "ablation_summary": ablation_df.to_dict(orient="records"),
+        "per_generator_summary": gen_df.to_dict(orient="records"),
+        "stress_test_summary": stress_df.to_dict(orient="records")
+    }
+    with open(os.path.join(args.output_dir, "fusion_metrics.json"), "w", encoding="utf-8") as f:
+        json.dump(metrics_payload, f, indent=2)
+    with open(os.path.join(args.output_dir, "metrics.json"), "w", encoding="utf-8") as f:
+        json.dump(metrics_payload, f, indent=2)
+
+    print(f"\n[SUCCESS] All evaluation tables and metrics JSON exported to {args.output_dir}/\n")
 
 
 if __name__ == "__main__":

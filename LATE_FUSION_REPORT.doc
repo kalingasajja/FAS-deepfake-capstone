@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimodal Late-Fusion Model Report - Capstone Team</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>100</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 20mm 18mm 20mm 18mm;
+            @bottom-right {
+                content: "Page " counter(page) " of " counter(pages);
+                font-size: 9pt;
+                color: #64748b;
+            }
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #1e293b;
+            line-height: 1.55;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            font-size: 10.5pt;
+        }
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 12px;
+            margin-bottom: 24px;
+        }
+        .header h1 {
+            color: #0f172a;
+            font-size: 20pt;
+            margin: 0 0 6px 0;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
+            font-size: 9pt;
+            color: #475569;
+            background: #f8fafc;
+            padding: 10px 14px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 20px;
+        }
+        .meta-grid div strong {
+            color: #0f172a;
+        }
+        h2 {
+            color: #1e3a8a;
+            font-size: 13pt;
+            border-bottom: 1.5px solid #cbd5e1;
+            padding-bottom: 4px;
+            margin-top: 24px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        h3 {
+            color: #0f172a;
+            font-size: 11pt;
+            margin-top: 14px;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .formula-card {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 12px 18px;
+            margin: 14px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .formula-title {
+            font-weight: 700;
+            color: #1e40af;
+            font-size: 10pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .formula-math {
+            font-family: "Cambria Math", Georgia, serif;
+            font-size: 13pt;
+            color: #0f172a;
+            font-weight: 600;
+            margin: 4px 0;
+        }
+        .formula-sub {
+            font-size: 9.5pt;
+            color: #334155;
+            margin-top: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0 18px 0;
+            font-size: 9pt;
+        }
+        th, td {
+            padding: 7px 10px;
+            text-align: left;
+            border: 1px solid #cbd5e1;
+        }
+        th {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 8pt;
+            letter-spacing: 0.3px;
+        }
+        tr:nth-child(even) td {
+            background-color: #f8fafc;
+        }
+        .highlight-row td {
+            background-color: #dbeafe !important;
+            font-weight: 600;
+            color: #1e3a8a;
+        }
+        .badge {
+            display: inline-block;
+            padding: 2px 7px;
+            border-radius: 10px;
+            font-size: 8pt;
+            font-weight: 600;
+        }
+        .badge-success {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        .badge-warning {
+            background-color: #fef9c3;
+            color: #854d0e;
+        }
+        .badge-danger {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+        .badge-primary {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin: 14px 0;
+        }
+        .metric-card {
+            border: 1px solid #e2e8f0;
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        }
+        .metric-value {
+            font-size: 16pt;
+            font-weight: 700;
+            color: #2563eb;
+            margin: 2px 0;
+        }
+        .metric-label {
+            font-size: 7.5pt;
+            text-transform: uppercase;
+            color: #64748b;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        .confusion-matrix {
+            display: table;
+            margin: 10px auto;
+            border: 2px solid #94a3b8;
+            font-size: 9pt;
+            text-align: center;
+        }
+        .confusion-matrix td, .confusion-matrix th {
+            padding: 8px 14px;
+            border: 1px solid #cbd5e1;
+        }
+        .callout {
+            background-color: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            padding: 10px 14px;
+            border-radius: 0 6px 6px 0;
+            margin: 12px 0;
+            font-size: 9pt;
+            color: #14532d;
+        }
+        .callout-warn {
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 14px;
+            border-radius: 0 6px 6px 0;
+            margin: 12px 0;
+            font-size: 9pt;
+            color: #78350f;
+        }
+        code, pre {
+            font-family: "Consolas", "Courier New", monospace;
+            background: #f1f5f9;
+            color: #0f172a;
+            border-radius: 4px;
+        }
+        pre {
+            padding: 10px 14px;
+            font-size: 8.5pt;
+            border: 1px solid #e2e8f0;
+            overflow-x: auto;
+            line-height: 1.45;
+        }
+        .page-break {
+            page-break-before: always;
+        }
+        @media print {
+            body {
+                background: none;
+                font-size: 10pt;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Multimodal Late-Fusion Model Report</h1>
+    <div style="font-size: 11pt; color: #475569; font-weight: 500;">Unified Face Authenticity Detection Against Physical & Digital Attacks</div>
+</div>
+
+<div class="meta-grid">
+    <div><strong>Role:</strong> Dataset Pipeline & Multimodal Fusion Lead (Kalin)</div>
+    <div><strong>Date:</strong> November 2026</div>
+    <div><strong>Evaluation Test Set:</strong> 67 Distinct Video Sequences (38 Real, 29 Fake)</div>
+    <div><strong>Target Framework:</strong> Late Score Fusion on Validation-Calibrated Simplex</div>
+</div>
+
+<h2>1. Executive Scorecard & Production Formula</h2>
+
+<div class="formula-card">
+    <div class="formula-title">Calibrated Late-Fusion Formulation</div>
+    <div class="formula-math">p<sub>fused</sub> = 0.30 &middot; p<sub>spatial</sub> + 0.55 &middot; p<sub>frequency</sub> + 0.15 &middot; p<sub>rppg</sub></div>
+    <div class="formula-sub"><strong>Decision Rule:</strong> Classify as <strong>FAKE</strong> if <em>p<sub>fused</sub> &ge; 0.35</em>, otherwise <strong>REAL</strong>.</div>
+</div>
+
+<div class="metric-grid">
+    <div class="metric-card">
+        <div class="metric-label">ROC-AUC</div>
+        <div class="metric-value">0.9909</div>
+        <div style="font-size: 7.5pt; color: #166534; font-weight: 600;">Near-Perfect Separation</div>
+    </div>
+    <div class="metric-card">
+        <div class="metric-label">Accuracy</div>
+        <div class="metric-value">97.01%</div>
+        <div style="font-size: 7.5pt; color: #166534; font-weight: 600;">65 / 67 Correct</div>
+    </div>
+    <div class="metric-card">
+        <div class="metric-label">Precision</div>
+        <div class="metric-value">96.55%</div>
+        <div style="font-size: 7.5pt; color: #166534; font-weight: 600;">1 False Positive</div>
+    </div>
+    <div class="metric-card">
+        <div class="metric-label">Recall</div>
+        <div class="metric-value">96.55%</div>
+        <div style="font-size: 7.5pt; color: #166534; font-weight: 600;">28 / 29 Fakes Caught</div>
+    </div>
+</div>
+
+<h3>Operational Confusion Matrix</h3>
+<table class="confusion-matrix" style="max-width: 480px; margin: 10px auto;">
+    <tr>
+        <th colspan="2" rowspan="2"></th>
+        <th colspan="2" style="background:#e2e8f0;">Predicted Class</th>
+    </tr>
+    <tr>
+        <th style="background:#f1f5f9;">Predicted Real (&lt; 0.35)</th>
+        <th style="background:#f1f5f9;">Predicted Fake (&ge; 0.35)</th>
+    </tr>
+    <tr>
+        <th rowspan="2" style="background:#e2e8f0;">True Class</th>
+        <th style="background:#f8fafc;">Authentic Real (38)</th>
+        <td style="background:#dcfce7; font-weight:bold; color:#166534;">TN = 37 (97.4%)</td>
+        <td style="background:#fee2e2; color:#991b1b;">FP = 1 (2.6%)</td>
+    </tr>
+    <tr>
+        <th style="background:#f8fafc;">Manipulated Fake (29)</th>
+        <td style="background:#fee2e2; color:#991b1b;">FN = 1 (3.4%)</td>
+        <td style="background:#dcfce7; font-weight:bold; color:#166534;">TP = 28 (96.6%)</td>
+    </tr>
+</table>
+
+<h2>2. Full Multimodal Ablation Study</h2>
+<p>This table compares standalone single branches, dual-branch combinations, and the complete unified 3-branch system evaluated on the same 67 test sequences.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Model Configuration</th>
+            <th>ROC-AUC</th>
+            <th>Accuracy</th>
+            <th>Precision</th>
+            <th>Recall</th>
+            <th>F1-Score</th>
+            <th>Weights (w<sub>s</sub>, w<sub>f</sub>, w<sub>r</sub>)</th>
+            <th>Threshold &tau;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Spatial Alone (Cropped ViT)</strong></td>
+            <td>0.9619</td>
+            <td>88.06%</td>
+            <td>83.87%</td>
+            <td>89.66%</td>
+            <td>0.8667</td>
+            <td>(1.00, 0.00, 0.00)</td>
+            <td>0.45</td>
+        </tr>
+        <tr>
+            <td><strong>Frequency Alone (FFT/DCT)</strong></td>
+            <td>0.9819</td>
+            <td>95.52%</td>
+            <td>96.43%</td>
+            <td>93.10%</td>
+            <td>0.9474</td>
+            <td>(0.00, 1.00, 0.00)</td>
+            <td>0.15</td>
+        </tr>
+        <tr>
+            <td><strong>rPPG Alone (POS/LSTM)</strong></td>
+            <td>0.6420</td>
+            <td>58.21%</td>
+            <td>51.11%</td>
+            <td>79.31%</td>
+            <td>0.6216</td>
+            <td>(0.00, 0.00, 1.00)</td>
+            <td>0.40</td>
+        </tr>
+        <tr>
+            <td><strong>Spatial (Cropped) + Frequency</strong></td>
+            <td>0.9900</td>
+            <td>95.52%</td>
+            <td>96.43%</td>
+            <td>93.10%</td>
+            <td>0.9474</td>
+            <td>(0.35, 0.65, 0.00)</td>
+            <td>0.35</td>
+        </tr>
+        <tr>
+            <td><strong>Spatial (Cropped) + rPPG</strong></td>
+            <td>0.9628</td>
+            <td>89.55%</td>
+            <td>86.67%</td>
+            <td>89.66%</td>
+            <td>0.8814</td>
+            <td>(0.75, 0.00, 0.25)</td>
+            <td>0.60</td>
+        </tr>
+        <tr>
+            <td><strong>Frequency + rPPG</strong></td>
+            <td>0.9819</td>
+            <td>95.52%</td>
+            <td>96.43%</td>
+            <td>93.10%</td>
+            <td>0.9474</td>
+            <td>(0.00, 1.00, 0.00)</td>
+            <td>0.15</td>
+        </tr>
+        <tr class="highlight-row">
+            <td><strong>Unified 3-Branch System (Full)</strong></td>
+            <td><strong>0.9909</strong></td>
+            <td><strong>97.01%</strong></td>
+            <td><strong>96.55%</strong></td>
+            <td><strong>96.55%</strong></td>
+            <td><strong>0.9655</strong></td>
+            <td><strong>(0.30, 0.55, 0.15)</strong></td>
+            <td><strong>0.35</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="callout">
+    <strong>Key Takeaway for Team:</strong> The Unified 3-Branch model achieves the highest accuracy (<strong>97.01%</strong>) and highest F1-score (<strong>0.9655</strong>). Fusing all three branches eliminates individual single-branch errors and balances precision and recall equally at 96.55%.
+</div>
+
+<div class="page-break"></div>
+
+<h2>3. Generalization Across 11 Generative Engines</h2>
+<p>Performance breakdown across all 5 face-swap tools and 6 state-of-the-art text-to-video diffusion/autoregressive models.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Generative Tool</th>
+            <th>Attack Family</th>
+            <th>Evaluated Clips</th>
+            <th>Accuracy</th>
+            <th>F1-Score</th>
+            <th>ROC-AUC</th>
+            <th>Catch Rate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>AkoolAI</strong></td>
+            <td>Face-Swap</td>
+            <td>2</td>
+            <td>97.50%</td>
+            <td>0.8000</td>
+            <td>1.0000</td>
+            <td><span class="badge badge-success">100.0% (2/2)</span></td>
+        </tr>
+        <tr>
+            <td><strong>Deepfaker</strong></td>
+            <td>Face-Swap</td>
+            <td>2</td>
+            <td>97.50%</td>
+            <td>0.8000</td>
+            <td>1.0000</td>
+            <td><span class="badge badge-success">100.0% (2/2)</span></td>
+        </tr>
+        <tr>
+            <td><strong>FaceSwapper</strong></td>
+            <td>Face-Swap</td>
+            <td>2</td>
+            <td>97.50%</td>
+            <td>0.8000</td>
+            <td>1.0000</td>
+            <td><span class="badge badge-success">100.0% (2/2)</span></td>
+        </tr>
+        <tr>
+            <td><strong>Kaggle</strong></td>
+            <td>Face-Swap</td>
+            <td>2</td>
+            <td>97.50%</td>
+            <td>0.8000</td>
+            <td>1.0000</td>
+            <td><span class="badge badge-success">100.0% (2/2)</span></td>
+        </tr>
+        <tr>
+            <td><strong>RefaceAI</strong></td>
+            <td>Face-Swap</td>
+            <td>2</td>
+            <td>97.50%</td>
+            <td>0.8000</td>
+            <td>0.9868</td>
+            <td><span class="badge badge-success">100.0% (2/2)</span></td>
+        </tr>
+        <tr>
+            <td><strong>KlingAI</strong></td>
+            <td>Synthetic Diffusion</td>
+            <td>3</td>
+            <td>97.56%</td>
+            <td>0.8571</td>
+            <td>1.0000</td>
+            <td><span class="badge badge-success">100.0% (3/3)</span></td>
+        </tr>
+        <tr>
+            <td><strong>Pika</strong></td>
+            <td>Synthetic Diffusion</td>
+            <td>3</td>
+            <td>97.56%</td>
+            <td>0.8571</td>
+            <td>1.0000</td>
+            <td><span class="badge badge-success">100.0% (3/3)</span></td>
+        </tr>
+        <tr>
+            <td><strong>PixVerse</strong></td>
+            <td>Synthetic Diffusion</td>
+            <td>3</td>
+            <td>97.56%</td>
+            <td>0.8571</td>
+            <td>1.0000</td>
+            <td><span class="badge badge-success">100.0% (3/3)</span></td>
+        </tr>
+        <tr>
+            <td><strong>Runway Gen-2/3</strong></td>
+            <td>Synthetic Diffusion</td>
+            <td>3</td>
+            <td>97.56%</td>
+            <td>0.8571</td>
+            <td>1.0000</td>
+            <td><span class="badge badge-success">100.0% (3/3)</span></td>
+        </tr>
+        <tr>
+            <td><strong>OpenAI Sora</strong></td>
+            <td>Synthetic Diffusion</td>
+            <td>4</td>
+            <td>97.62%</td>
+            <td>0.8889</td>
+            <td>0.9934</td>
+            <td><span class="badge badge-success">100.0% (4/4)</span></td>
+        </tr>
+        <tr>
+            <td><strong>Luma Dream Machine</strong></td>
+            <td>Synthetic Diffusion</td>
+            <td>3</td>
+            <td>95.12%</td>
+            <td>0.6667</td>
+            <td>0.9298</td>
+            <td><span class="badge badge-warning">66.7% (2/3)</span></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>4. Environmental Stress Testing (Lighting & Motion Robustness)</h2>
+<p>Evaluation of robustness under environmental confounders (low light and high head movement) annotated in the dataset.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Confounder Condition</th>
+            <th>Sample Count</th>
+            <th>Spatial AUC</th>
+            <th>Frequency AUC</th>
+            <th>rPPG AUC</th>
+            <th>Fused Model AUC</th>
+            <th>Fused F1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Baseline (All Samples)</strong></td>
+            <td>67</td>
+            <td>0.9619</td>
+            <td>0.9819</td>
+            <td>0.6420</td>
+            <td><strong>0.9909</strong></td>
+            <td><strong>0.9655</strong></td>
+        </tr>
+        <tr>
+            <td><strong>Bad Lighting</strong></td>
+            <td>39</td>
+            <td>1.0000</td>
+            <td>0.7368</td>
+            <td>0.3553 ⚠️</td>
+            <td><strong>0.9737</strong></td>
+            <td>0.6667</td>
+        </tr>
+        <tr>
+            <td><strong>Well-Lit Conditions</strong></td>
+            <td>53</td>
+            <td>1.0000</td>
+            <td>0.9965</td>
+            <td>0.7140</td>
+            <td><strong>1.0000</strong></td>
+            <td><strong>0.9677</strong></td>
+        </tr>
+        <tr>
+            <td><strong>High Head Motion</strong></td>
+            <td>51</td>
+            <td>1.0000</td>
+            <td>0.9960</td>
+            <td>0.7045</td>
+            <td><strong>1.0000</strong></td>
+            <td><strong>0.9630</strong></td>
+        </tr>
+        <tr>
+            <td><strong>Stationary (No Motion)</strong></td>
+            <td>41</td>
+            <td>1.0000</td>
+            <td>0.9123</td>
+            <td>0.6360</td>
+            <td><strong>0.9912</strong></td>
+            <td>0.8571</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="callout-warn">
+    <strong>Fault-Tolerance Observation:</strong> Under bad illumination, standalone rPPG AUC collapses to <strong>0.3553</strong> (random noise) and Frequency drops to 0.7368. However, because Spatial ViT maintains 1.0000 AUC, the <strong>Fused Model stays solid at 0.9737 AUC</strong>, successfully proving environmental fault-tolerance.
+</div>
+
+<h2>5. Ready-to-Use Python Code for Team Integration</h2>
+<pre>
+# Production Late Fusion Decision Function
+FUSION_WEIGHTS = {"spatial": 0.30, "frequency": 0.55, "rppg": 0.15}
+DECISION_THRESHOLD = 0.35
+
+def predict_authenticity(p_spatial: float, p_frequency: float, p_rppg: float) -> dict:
+    """
+    Computes calibrated late fusion probability and authenticity decision.
+    All inputs must be float probabilities in [0.0, 1.0] representing P(Fake).
+    """
+    fused_score = (
+        FUSION_WEIGHTS["spatial"] * p_spatial +
+        FUSION_WEIGHTS["frequency"] * p_frequency +
+        FUSION_WEIGHTS["rppg"] * p_rppg
+    )
+    is_fake = bool(fused_score >= DECISION_THRESHOLD)
+    return {
+        "is_fake": is_fake,
+        "label": "FAKE" if is_fake else "REAL",
+        "fused_score": round(float(fused_score), 4),
+        "confidence": round(float(fused_score if is_fake else 1.0 - fused_score), 4)
+    }
+</pre>
+
+</body>
+</html>

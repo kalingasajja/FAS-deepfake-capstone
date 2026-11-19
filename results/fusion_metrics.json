@@ -1,0 +1,324 @@
+{
+  "model_name": "Calibrated Multimodal Late-Fusion Model",
+  "version": "2.0 (Cropped Boundary Spatial + 2D FFT + POS rPPG)",
+  "evaluation_dataset": "Netherlands Forensic Institute (NFI) rPPG Deepfake Detection",
+  "dataset_summary": {
+    "total_test_samples": 67,
+    "authentic_real_samples": 38,
+    "manipulated_fake_samples": 29,
+    "face_swap_attacks": 10,
+    "synthetic_diffusion_attacks": 19
+  },
+  "optimal_fusion_parameters": {
+    "formula": "p_fused = 0.30 * p_spatial + 0.55 * p_frequency + 0.15 * p_rppg",
+    "weights": {
+      "w_spatial": 0.3,
+      "w_frequency": 0.55,
+      "w_rppg": 0.15
+    },
+    "decision_threshold": 0.35,
+    "classification_rule": "Prediction is FAKE if p_fused >= 0.35 else REAL"
+  },
+  "unified_fused_metrics": {
+    "roc_auc": 0.9909,
+    "pr_auc": 0.9885,
+    "accuracy": 0.9701,
+    "balanced_accuracy": 0.9696,
+    "precision": 0.9655,
+    "recall": 0.9655,
+    "f1_score": 0.9655,
+    "confusion_matrix": {
+      "true_positives": 28,
+      "false_positives": 1,
+      "true_negatives": 37,
+      "false_negatives": 1
+    },
+    "false_positive_rate": 0.0263,
+    "false_negative_rate": 0.0345
+  },
+  "single_branch_comparison": {
+    "spatial_alone": {
+      "roc_auc": 0.9619,
+      "accuracy": 0.8806,
+      "precision": 0.8387,
+      "recall": 0.8966,
+      "f1_score": 0.8667,
+      "face_swap_catch_rate": 0.8
+    },
+    "frequency_alone": {
+      "roc_auc": 0.9819,
+      "accuracy": 0.9552,
+      "precision": 0.9643,
+      "recall": 0.931,
+      "f1_score": 0.9474,
+      "face_swap_catch_rate": 1.0
+    },
+    "rppg_alone": {
+      "roc_auc": 0.642,
+      "accuracy": 0.5821,
+      "precision": 0.5111,
+      "recall": 0.7931,
+      "f1_score": 0.6216,
+      "face_swap_catch_rate": 0.3
+    }
+  },
+  "full_ablation_study": [
+    {
+      "model": "Spatial (SigLIP/ViT)",
+      "weights": {
+        "spatial": 1.0,
+        "frequency": 0.0,
+        "rppg": 0.0
+      },
+      "threshold": 0.45,
+      "roc_auc": 0.9619,
+      "accuracy": 0.8806,
+      "balanced_accuracy": 0.8825,
+      "precision": 0.8387,
+      "recall": 0.8966,
+      "f1_score": 0.8667
+    },
+    {
+      "model": "Frequency (FFT/DCT)",
+      "weights": {
+        "spatial": 0.0,
+        "frequency": 1.0,
+        "rppg": 0.0
+      },
+      "threshold": 0.15,
+      "roc_auc": 0.9819,
+      "accuracy": 0.9552,
+      "balanced_accuracy": 0.9524,
+      "precision": 0.9643,
+      "recall": 0.931,
+      "f1_score": 0.9474
+    },
+    {
+      "model": "rPPG (Physiological)",
+      "weights": {
+        "spatial": 0.0,
+        "frequency": 0.0,
+        "rppg": 1.0
+      },
+      "threshold": 0.4,
+      "roc_auc": 0.642,
+      "accuracy": 0.5821,
+      "balanced_accuracy": 0.6071,
+      "precision": 0.5111,
+      "recall": 0.7931,
+      "f1_score": 0.6216
+    },
+    {
+      "model": "Spatial + Frequency",
+      "weights": {
+        "spatial": 0.35,
+        "frequency": 0.65,
+        "rppg": 0.0
+      },
+      "threshold": 0.35,
+      "roc_auc": 0.99,
+      "accuracy": 0.9552,
+      "balanced_accuracy": 0.9524,
+      "precision": 0.9643,
+      "recall": 0.931,
+      "f1_score": 0.9474
+    },
+    {
+      "model": "Spatial + rPPG",
+      "weights": {
+        "spatial": 0.75,
+        "frequency": 0.0,
+        "rppg": 0.25
+      },
+      "threshold": 0.6,
+      "roc_auc": 0.9628,
+      "accuracy": 0.8955,
+      "balanced_accuracy": 0.8956,
+      "precision": 0.8667,
+      "recall": 0.8966,
+      "f1_score": 0.8814
+    },
+    {
+      "model": "Frequency + rPPG",
+      "weights": {
+        "spatial": 0.0,
+        "frequency": 1.0,
+        "rppg": 0.0
+      },
+      "threshold": 0.15,
+      "roc_auc": 0.9819,
+      "accuracy": 0.9552,
+      "balanced_accuracy": 0.9524,
+      "precision": 0.9643,
+      "recall": 0.931,
+      "f1_score": 0.9474
+    },
+    {
+      "model": "Unified (All 3)",
+      "weights": {
+        "spatial": 0.3,
+        "frequency": 0.55,
+        "rppg": 0.15
+      },
+      "threshold": 0.35,
+      "roc_auc": 0.9909,
+      "accuracy": 0.9701,
+      "balanced_accuracy": 0.9696,
+      "precision": 0.9655,
+      "recall": 0.9655,
+      "f1_score": 0.9655
+    }
+  ],
+  "per_generator_metrics": {
+    "AkoolAI": {
+      "category": "face_swap",
+      "fake_samples": 2,
+      "accuracy": 0.975,
+      "balanced_accuracy": 0.9868,
+      "f1_score": 0.8,
+      "roc_auc": 1.0
+    },
+    "Deepfaker": {
+      "category": "face_swap",
+      "fake_samples": 2,
+      "accuracy": 0.975,
+      "balanced_accuracy": 0.9868,
+      "f1_score": 0.8,
+      "roc_auc": 1.0
+    },
+    "Faceswapper": {
+      "category": "face_swap",
+      "fake_samples": 2,
+      "accuracy": 0.975,
+      "balanced_accuracy": 0.9868,
+      "f1_score": 0.8,
+      "roc_auc": 1.0
+    },
+    "Kaggle": {
+      "category": "face_swap",
+      "fake_samples": 2,
+      "accuracy": 0.975,
+      "balanced_accuracy": 0.9868,
+      "f1_score": 0.8,
+      "roc_auc": 1.0
+    },
+    "KlingAI": {
+      "category": "synthetic",
+      "fake_samples": 3,
+      "accuracy": 0.9756,
+      "balanced_accuracy": 0.9868,
+      "f1_score": 0.8571,
+      "roc_auc": 1.0
+    },
+    "Luma": {
+      "category": "synthetic",
+      "fake_samples": 3,
+      "accuracy": 0.9512,
+      "balanced_accuracy": 0.8202,
+      "f1_score": 0.6667,
+      "roc_auc": 0.9298
+    },
+    "Pika": {
+      "category": "synthetic",
+      "fake_samples": 3,
+      "accuracy": 0.9756,
+      "balanced_accuracy": 0.9868,
+      "f1_score": 0.8571,
+      "roc_auc": 1.0
+    },
+    "PixVerse": {
+      "category": "synthetic",
+      "fake_samples": 3,
+      "accuracy": 0.9756,
+      "balanced_accuracy": 0.9868,
+      "f1_score": 0.8571,
+      "roc_auc": 1.0
+    },
+    "RefaceAI": {
+      "category": "face_swap",
+      "fake_samples": 2,
+      "accuracy": 0.975,
+      "balanced_accuracy": 0.9868,
+      "f1_score": 0.8,
+      "roc_auc": 0.9868
+    },
+    "Runway": {
+      "category": "synthetic",
+      "fake_samples": 3,
+      "accuracy": 0.9756,
+      "balanced_accuracy": 0.9868,
+      "f1_score": 0.8571,
+      "roc_auc": 1.0
+    },
+    "Sora": {
+      "category": "synthetic",
+      "fake_samples": 4,
+      "accuracy": 0.9762,
+      "balanced_accuracy": 0.9868,
+      "f1_score": 0.8889,
+      "roc_auc": 0.9934
+    }
+  },
+  "environmental_stress_test": {
+    "All Samples": {
+      "fake_samples": 29,
+      "eval_total": 67,
+      "spatial_f1": 0.8525,
+      "spatial_auc": 0.9619,
+      "frequency_f1": 0.9474,
+      "frequency_auc": 0.9819,
+      "rppg_f1": 0.6022,
+      "rppg_auc": 0.642,
+      "fused_f1": 0.9655,
+      "fused_auc": 0.9909
+    },
+    "Bad Lighting": {
+      "fake_samples": 1,
+      "eval_total": 39,
+      "spatial_f1": 0.25,
+      "spatial_auc": 1.0,
+      "frequency_f1": 0.0,
+      "frequency_auc": 0.7368,
+      "rppg_f1": 0.0526,
+      "rppg_auc": 0.3553,
+      "fused_f1": 0.6667,
+      "fused_auc": 0.9737
+    },
+    "Well-Lit": {
+      "fake_samples": 15,
+      "eval_total": 53,
+      "spatial_f1": 0.8333,
+      "spatial_auc": 1.0,
+      "frequency_f1": 0.9677,
+      "frequency_auc": 0.9965,
+      "rppg_f1": 0.4308,
+      "rppg_auc": 0.714,
+      "fused_f1": 0.9677,
+      "fused_auc": 1.0
+    },
+    "High Motion (Movement: Yes)": {
+      "fake_samples": 13,
+      "eval_total": 51,
+      "spatial_f1": 0.8125,
+      "spatial_auc": 1.0,
+      "frequency_f1": 0.963,
+      "frequency_auc": 0.996,
+      "rppg_f1": 0.3934,
+      "rppg_auc": 0.7045,
+      "fused_f1": 0.963,
+      "fused_auc": 1.0
+    },
+    "Stationary (Movement: No)": {
+      "fake_samples": 3,
+      "eval_total": 41,
+      "spatial_f1": 0.5,
+      "spatial_auc": 1.0,
+      "frequency_f1": 0.6667,
+      "frequency_auc": 0.9123,
+      "rppg_f1": 0.1429,
+      "rppg_auc": 0.636,
+      "fused_f1": 0.8571,
+      "fused_auc": 0.9912
+    }
+  }
+}

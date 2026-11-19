@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepfake Sentinel &bull; Multimodal Evaluation UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #f8fafc;
+      color: #0f172a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+  </style>
+</head>
+<body class="p-6 md:p-10 max-w-5xl mx-auto">
+
+  <!-- Minimal Header -->
+  <header class="pb-5 mb-8 border-b border-slate-200 flex flex-col md:flex-row md:items-center justify-between gap-3">
+    <div>
+      <div class="flex items-center gap-2">
+        <h1 class="text-xl font-bold tracking-tight text-slate-900">Multimodal Deepfake Detector</h1>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-mono border border-slate-200">v2.0-eval</span>
+      </div>
+      <p class="text-xs text-slate-500 mt-1">Calibrated Late Fusion Pipeline: SigLIP ViT + 2D FFT + POS rPPG</p>
+    </div>
+    <div class="flex items-center gap-2 text-xs mono text-slate-600 bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm">
+      <span>w = [0.30, 0.55, 0.15]</span>
+      <span class="text-slate-300">|</span>
+      <span>&tau; = 0.35</span>
+    </div>
+  </header>
+
+  <!-- Main Grid Layout -->
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+
+    <!-- Left: Upload & Config Controls (5 Cols) -->
+    <div class="md:col-span-5 space-y-6">
+      
+      <!-- Upload Box -->
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-slate-400">1. Media Input</div>
+        
+        <div id="drop-area" class="border-2 border-dashed border-slate-300 hover:border-slate-400 rounded-lg p-6 text-center cursor-pointer transition-colors bg-slate-50/50 hover:bg-slate-50">
+          <input type="file" id="file-input" accept="video/mp4,video/avi,image/jpeg,image/png" class="hidden">
+          <div id="upload-prompt" class="space-y-2">
+            <svg class="mx-auto h-8 w-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+            </svg>
+            <div class="text-xs font-semibold text-slate-700">Select or drop video / image</div>
+            <div class="text-[11px] text-slate-400 font-mono">.mp4, .avi, .jpg, .png</div>
+          </div>
+          <div id="file-selected" class="hidden text-xs font-mono font-medium text-blue-600 truncate">
+            <span id="selected-filename">sample.mp4</span>
+          </div>
+        </div>
+
+        <button id="analyze-btn" disabled class="w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-800 disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed rounded-lg font-medium text-xs text-white shadow-sm transition-colors flex items-center justify-center gap-2">
+          <span>Run Evaluation</span>
+        </button>
+      </div>
+
+      <!-- Pipeline Architecture Summary -->
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-2.5 text-xs">
+        <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">2. Branch Architecture</div>
+        <div class="flex justify-between py-1 border-b border-slate-100">
+          <span class="text-slate-500">Spatial Branch:</span>
+          <span class="font-mono text-slate-800 font-medium">SigLIP ViT-Base (Rohith)</span>
+        </div>
+        <div class="flex justify-between py-1 border-b border-slate-100">
+          <span class="text-slate-500">Frequency Branch:</span>
+          <span class="font-mono text-slate-800 font-medium">2D FFT + Radial DCT (Lalit)</span>
+        </div>
+        <div class="flex justify-between py-1 border-b border-slate-100">
+          <span class="text-slate-500">Physiological Branch:</span>
+          <span class="font-mono text-slate-800 font-medium">POS BVP Liveness (Abhishek)</span>
+        </div>
+        <div class="flex justify-between py-1">
+          <span class="text-slate-500">Decision Threshold:</span>
+          <span class="font-mono text-slate-800 font-medium">&ge; 0.35 &rarr; FAKE</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right: Output & Forensic Inspection (7 Cols) -->
+    <div class="md:col-span-7 space-y-6">
+
+      <!-- Idle Placeholder State -->
+      <div id="placeholder-state" class="bg-white rounded-xl border border-slate-200 p-12 text-center shadow-sm space-y-2">
+        <div class="text-sm font-semibold text-slate-700">No media loaded</div>
+        <p class="text-xs text-slate-400 max-w-sm mx-auto">Upload a video or facial image on the left to execute the multimodal pipeline and view branch activations.</p>
+      </div>
+
+      <!-- Loading State -->
+      <div id="loading-state" class="hidden bg-white rounded-xl border border-slate-200 p-12 text-center shadow-sm space-y-3">
+        <div class="w-6 h-6 border-2 border-slate-300 border-t-slate-900 rounded-full animate-spin mx-auto"></div>
+        <div class="text-xs font-semibold text-slate-700">Processing input...</div>
+        <p class="text-[11px] text-slate-400 font-mono">Running face detection &bull; Computing 2D FFT &bull; Extracting rPPG BVP</p>
+      </div>
+
+      <!-- Results Display -->
+      <div id="results-card" class="hidden space-y-5">
+
+        <!-- Verdict Banner -->
+        <div id="verdict-banner" class="bg-white rounded-xl border p-5 shadow-sm flex items-center justify-between">
+          <div>
+            <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Prediction Verdict</div>
+            <div id="verdict-text" class="text-xl font-bold tracking-tight text-slate-900">AUTHENTIC REAL</div>
+          </div>
+          <div class="text-right">
+            <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Fused Probability</div>
+            <div id="fused-score-text" class="text-xl font-bold mono text-slate-900">p = 0.0821</div>
+          </div>
+        </div>
+
+        <!-- Tabular Modality Scores -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+          <div class="px-5 py-3 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Modality Decomposition</span>
+            <span id="face-status" class="text-xs font-mono text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Face Detected</span>
+          </div>
+
+          <table class="w-full text-xs text-left">
+            <thead class="text-slate-400 font-semibold border-b border-slate-100 bg-white">
+              <tr>
+                <th class="py-2.5 px-5 font-medium">Branch</th>
+                <th class="py-2.5 px-3 font-medium">Weight</th>
+                <th class="py-2.5 px-3 font-medium">Score (p)</th>
+                <th class="py-2.5 px-5 font-medium text-right">Contribution</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 mono text-slate-700">
+              <tr>
+                <td class="py-2.5 px-5 font-sans font-medium text-slate-900">Spatial (SigLIP ViT)</td>
+                <td class="py-2.5 px-3 text-slate-500">0.30</td>
+                <td id="table-spatial-score" class="py-2.5 px-3 font-bold">0.1240</td>
+                <td id="table-spatial-contrib" class="py-2.5 px-5 text-right text-slate-500">+0.0372</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-5 font-sans font-medium text-slate-900">Frequency (2D FFT)</td>
+                <td class="py-2.5 px-3 text-slate-500">0.55</td>
+                <td id="table-freq-score" class="py-2.5 px-3 font-bold">0.0520</td>
+                <td id="table-freq-contrib" class="py-2.5 px-5 text-right text-slate-500">+0.0286</td>
+              </tr>
+              <tr id="table-rppg-row">
+                <td class="py-2.5 px-5 font-sans font-medium text-slate-900">Physiological (rPPG)</td>
+                <td class="py-2.5 px-3 text-slate-500">0.15</td>
+                <td id="table-rppg-score" class="py-2.5 px-3 font-bold">0.1080</td>
+                <td id="table-rppg-contrib" class="py-2.5 px-5 text-right text-slate-500">+0.0162</td>
+              </tr>
+            </tbody>
+            <tfoot class="border-t border-slate-200 bg-slate-50/50 font-bold">
+              <tr>
+                <td class="py-2 px-5 font-sans text-slate-800">Fused Result</td>
+                <td class="py-2 px-3 text-slate-500">1.00</td>
+                <td id="table-fused-final" class="py-2 px-3 mono text-slate-900 font-black">0.0820</td>
+                <td id="table-confidence" class="py-2 px-5 text-right mono text-emerald-600">91.8% Real</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- Visual Proof Tiles -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+            <div class="text-[11px] font-mono text-slate-400 mb-2">Cropped ROI (224x224)</div>
+            <img id="img-face" src="" class="w-full h-36 object-contain rounded bg-slate-100 border border-slate-200" />
+          </div>
+          <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+            <div class="text-[11px] font-mono text-slate-400 mb-2">2D FFT Power Spectrum</div>
+            <img id="img-fft" src="" class="w-full h-36 object-contain rounded bg-slate-100 border border-slate-200" />
+          </div>
+        </div>
+
+        <!-- BVP Waveform Container -->
+        <div id="bvp-wrapper" class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-[11px] font-mono text-slate-400">Extracted Capillary Pulse Wave (POS)</span>
+            <span id="bpm-indicator" class="text-xs font-mono font-bold text-slate-700">HR: 72.0 BPM</span>
+          </div>
+          <img id="img-bvp" src="" class="w-full h-24 object-contain rounded bg-slate-100 border border-slate-200" />
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="mt-12 pt-4 border-t border-slate-200 text-center text-xs text-slate-400 font-mono">
+    Deepfake Sentinel &bull; Capstone Multimodal Evaluation Environment
+  </footer>
+
+  <script>
+    const dropArea = document.getElementById('drop-area');
+    const fileInput = document.getElementById('file-input');
+    const uploadPrompt = document.getElementById('upload-prompt');
+    const fileSelected = document.getElementById('file-selected');
+    const selectedFilename = document.getElementById('selected-filename');
+    const analyzeBtn = document.getElementById('analyze-btn');
+
+    const placeholderState = document.getElementById('placeholder-state');
+    const loadingState = document.getElementById('loading-state');
+    const resultsCard = document.getElementById('results-card');
+
+    let currentFile = null;
+
+    dropArea.addEventListener('click', () => fileInput.click());
+
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files.length) handleFile(e.target.files[0]);
+    });
+
+    dropArea.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropArea.classList.add('border-slate-500');
+    });
+
+    dropArea.addEventListener('dragleave', () => dropArea.classList.remove('border-slate-500'));
+
+    dropArea.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropArea.classList.remove('border-slate-500');
+      if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+    });
+
+    function handleFile(file) {
+      currentFile = file;
+      selectedFilename.textContent = file.name + ' (' + (file.size / (1024*1024)).toFixed(1) + ' MB)';
+      uploadPrompt.classList.add('hidden');
+      fileSelected.classList.remove('hidden');
+      analyzeBtn.disabled = false;
+    }
+
+    analyzeBtn.addEventListener('click', async () => {
+      if (!currentFile) return;
+
+      placeholderState.classList.add('hidden');
+      resultsCard.classList.add('hidden');
+      loadingState.classList.remove('hidden');
+      analyzeBtn.disabled = true;
+
+      const reader = new FileReader();
+      reader.onload = async () => {
+        try {
+          const resp = await fetch('/api/predict', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: currentFile.name, data: reader.result })
+          });
+          const data = await resp.json();
+
+          if (resp.ok) {
+            renderResults(data);
+          } else {
+            alert('Error: ' + (data.error || 'Evaluation failed'));
+            placeholderState.classList.remove('hidden');
+          }
+        } catch (err) {
+          alert('Network or server error: ' + err.message);
+          placeholderState.classList.remove('hidden');
+        } finally {
+          loadingState.classList.add('hidden');
+          analyzeBtn.disabled = false;
+        }
+      };
+      reader.readAsDataURL(currentFile);
+    });
+
+    function renderResults(res) {
+      resultsCard.classList.remove('hidden');
+
+      const banner = document.getElementById('verdict-banner');
+      const verdictText = document.getElementById('verdict-text');
+      const fusedScoreText = document.getElementById('fused-score-text');
+
+      if (res.is_fake) {
+        banner.className = 'bg-red-50 rounded-xl border border-red-200 p-5 shadow-sm flex items-center justify-between text-red-900';
+        verdictText.textContent = 'DEEPFAKE DETECTED';
+        fusedScoreText.className = 'text-xl font-bold mono text-red-700';
+      } else {
+        banner.className = 'bg-emerald-50 rounded-xl border border-emerald-200 p-5 shadow-sm flex items-center justify-between text-emerald-900';
+        verdictText.textContent = 'AUTHENTIC REAL';
+        fusedScoreText.className = 'text-xl font-bold mono text-emerald-700';
+      }
+
+      fusedScoreText.textContent = 'p = ' + res.fused_score.toFixed(4);
+
+      // Table breakdown
+      const s = res.scores.spatial || 0.0;
+      const f = res.scores.frequency || 0.0;
+      const r = res.scores.rppg;
+
+      const ws = res.weights_used.spatial;
+      const wf = res.weights_used.frequency;
+      const wr = res.weights_used.rppg;
+
+      document.getElementById('table-spatial-score').textContent = s.toFixed(4);
+      document.getElementById('table-spatial-contrib').textContent = '+' + (s * ws).toFixed(4);
+
+      document.getElementById('table-freq-score').textContent = f.toFixed(4);
+      document.getElementById('table-freq-contrib').textContent = '+' + (f * wf).toFixed(4);
+
+      const rppgRow = document.getElementById('table-rppg-row');
+      const bvpWrapper = document.getElementById('bvp-wrapper');
+      if (r !== null) {
+        rppgRow.style.display = 'table-row';
+        bvpWrapper.style.display = 'block';
+        document.getElementById('table-rppg-score').textContent = r.toFixed(4);
+        document.getElementById('table-rppg-contrib').textContent = '+' + (r * wr).toFixed(4);
+        document.getElementById('bpm-indicator').textContent = 'HR: ' + (res.estimated_bpm || '0.0') + ' BPM';
+      } else {
+        rppgRow.style.display = 'none';
+        bvpWrapper.style.display = 'none';
+      }
+
+      document.getElementById('table-fused-final').textContent = res.fused_score.toFixed(4);
+      document.getElementById('table-confidence').textContent = res.confidence_percentage + '% ' + res.verdict;
+
+      // Images
+      document.getElementById('img-face').src = res.visuals.face_crop || '';
+      document.getElementById('img-fft').src = res.visuals.fft_spectrum || '';
+      if (res.visuals.bvp_waveform) {
+        document.getElementById('img-bvp').src = res.visuals.bvp_waveform;
+      }
+    }
+  </script>
+</body>
+</html>

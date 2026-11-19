@@ -26,3 +26,9 @@ data/nfi_dataset/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Scratch and environment wrappers
+scratch/
+powershell.bat
+powershell.cmd
+data/predictions/mock/

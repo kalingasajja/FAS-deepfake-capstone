@@ -176,7 +176,7 @@ def make_branch_manifests(splits, out_dir):
 def generate_mock(splits, out_dir, seed=42):
     os.makedirs(out_dir, exist_ok=True)
     nprng = np.random.RandomState(seed)
-    samples = splits["test_samples"]
+    samples = splits.get("val_samples", []) + splits.get("test_samples", [])
     sp, fq, rp = [], [], []
     for s in samples:
         vid   = s["video_id"]

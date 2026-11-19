@@ -70,6 +70,8 @@ def evaluate_by_generator(
 
     res = pd.DataFrame(records)
     cols = ["generator", "category", "fake_count", "accuracy", "balanced_accuracy", "f1", "roc_auc"]
+    if len(res) == 0:
+        return pd.DataFrame(columns=cols)
     return res[cols]
 
 

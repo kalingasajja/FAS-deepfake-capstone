@@ -1,6 +1,6 @@
-condition,samples,spatial_score_f1,spatial_score_auc,frequency_score_f1,frequency_score_auc,rppg_score_f1,rppg_score_auc,fused_score_f1,fused_score_auc
-All Samples,67,1.0,1.0,1.0,1.0,0.84,0.9165,0.84,0.9165
-Bad Lighting,1,1.0,,1.0,,1.0,,1.0,
-Well-Lit,15,1.0,,1.0,,0.6364,,0.6364,
-High Motion (Movement: Yes),13,1.0,,1.0,,0.5556,,0.5556,
-Stationary (Movement: No),3,1.0,,1.0,,1.0,,1.0,
+condition,fake_samples,eval_total,spatial_score_f1,spatial_score_auc,frequency_score_f1,frequency_score_auc,rppg_score_f1,rppg_score_auc,fused_score_f1,fused_score_auc
+All Samples,29,67,0.8525,0.9619,0.9474,0.9819,0.6022,0.642,0.9655,0.9909
+Bad Lighting,1,39,0.25,1.0,0.0,0.7368,0.0526,0.3553,0.6667,0.9737
+Well-Lit,15,53,0.8333,1.0,0.9677,0.9965,0.4308,0.714,0.9677,1.0
+High Motion (Movement: Yes),13,51,0.8125,1.0,0.963,0.996,0.3934,0.7045,0.963,1.0
+Stationary (Movement: No),3,41,0.5,1.0,0.6667,0.9123,0.1429,0.636,0.8571,0.9912
